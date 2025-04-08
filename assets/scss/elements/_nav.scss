@@ -4,7 +4,7 @@
     margin: 0;
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 30px;
 
     li {
       margin: 0;
@@ -12,16 +12,37 @@
 
       a {
         padding: 38px 0;
-        display: block;
+        display: inline-block;
         color: var(--color-primary);
         font-size: 16px;
-        font-family: 'Inter Medium';
-        letter-spacing: -.2px;
+        font-family: "Inter Medium";
+        letter-spacing: -0.2px;
+        position: relative;
+        text-decoration: none;
+        &:after {
+          background: none repeat scroll 0 0 transparent;
+          bottom: 3.25rem;
+          content: "";
+          display: block;
+          height: 2px;
+          left: 50%;
+          position: absolute;
+          background: var(--color-primary);
+          transition: width 0.3s ease 0s, left 0.3s ease 0s,
+            opacity 0.3s ease 0s;
+          width: 0;
+          opacity: 0;
+        }
         &:hover {
-          color: var(--color-primary)
+          color: var(--color-primary);
+          &:after {
+            width: 100%;
+            left: 0;
+            opacity: 1;
+          }
         }
         .fa-duotone {
-          -webkit-text-stroke: .5px;
+          -webkit-text-stroke: 0.5px;
         }
       }
       &.has-dropdown {
@@ -34,7 +55,6 @@
 .header--sticky.sticky {
   .nav-area ul li > a.nav-link {
     padding: 20px 0;
-    
   }
 }
 

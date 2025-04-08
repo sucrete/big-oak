@@ -19,7 +19,7 @@ export class Footer extends LitElement {
                       <a href="index.html" class="logo">
                         <img
                           class="footer-logo"
-                          src="assets/images/logo/stagg-logo-white.svg"
+                          src="assets/images/logo/big-oak-logo-with-veins-white.svg"
                           alt=""
                         />
                       </a>
@@ -29,9 +29,7 @@ export class Footer extends LitElement {
 
                   <form action="" class="footer-form">
                     <div class="single">
-                      <p class="mb-4">
-                        Join our email list to get exclusive discounts!
-                      </p>
+                      <p class="mb-4">Get the latest news & promotions!</p>
                       <!-- <label for="name">Email</label> -->
                       <div class="that-group">
                         <input
@@ -50,17 +48,17 @@ export class Footer extends LitElement {
                   <div class="link-group d-flex flex-row flex-start">
                     <div class="contact-stack">
                       <a
-                        href="tel:7855391041"
+                        href="tel:3157899419"
                         class="link phone-link no-underline"
                       >
                         <img
                           class="icon phone-icon"
                           src="./assets/images/icons/phone.svg"
                           alt=""
-                        />(785) 539-1041
+                        />(315) 789-9419
                       </a>
                       <a
-                        href="https://maps.app.goo.gl/Bzrg9oSfx67wBW1E7"
+                        href="https://goo.gl/maps/PBiyaDpiFXfoob3L8"
                         target="_blank"
                         class="link map-link d-flex flex-row align-items-start no-underline"
                       >
@@ -70,15 +68,15 @@ export class Footer extends LitElement {
                           alt=""
                         />
                         <div>
-                          4441 Stagg Hill Rd <br />
-                          Manhattan, KS 66502
+                          33 Packwood Rd <br />
+                          Geneva, NY 14456
                         </div>
                       </a>
                     </div>
 
                     <div class="social-stack">
                       <a
-                        href="https://www.facebook.com/StaggHillGolfClub"
+                        href="https://www.facebook.com/profile.php?id=100063650076110#"
                         class="social-link link"
                         target="_blank"
                       >
@@ -88,7 +86,7 @@ export class Footer extends LitElement {
                         />
                         Facebook
                       </a>
-                      <a
+                      <!-- <a
                         href="https://www.instagram.com/stagghill_gc/"
                         class="social-link link"
                         target="_blank"
@@ -98,7 +96,7 @@ export class Footer extends LitElement {
                           alt=""
                         />
                         Instagram
-                      </a>
+                      </a> -->
                       <!-- <a href="https://x.com/stagghillgolf" class="social-link link" target="_blank">
                         <img src="./assets/images/icons/x-logo.svg" alt="" />
                         X
@@ -117,7 +115,7 @@ export class Footer extends LitElement {
                       <span class="grey-text">
                         <span class="hyphen">-</span>
                         <br class="break" />
-                        Manhattan, KS</span
+                        Geneva, NY</span
                       >
                     </div>
                     <!--~ Top Row -->
@@ -227,9 +225,7 @@ export class Footer extends LitElement {
                 <div class="col-lg-12">
                   <div class="copyright-wrapper">
                     <div class="new-row">
-                      <p>
-                        © Stagg Hill Golf Club | ${new Date().getFullYear()}
-                      </p>
+                      <p>© Big Oak Golf Course | ${new Date().getFullYear()}</p>
                     </div>
                     <a
                       class="teequest-link no-underline"

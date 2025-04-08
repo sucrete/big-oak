@@ -242,37 +242,6 @@ section.sponsors-section {
   }
 }
 
-//* slider
-.slider-wrapper {
-  position: absolute;
-  left: 0;
-  bottom: 3rem;
-  z-index: 5;
-  .slider {
-    .slide {
-      .title-wrapper {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        img {
-          width: 65px;
-          height: auto;
-          margin: 0 70px 0 80px;
-        }
-        h2 {
-          font-size: 70px;
-          letter-spacing: -4px;
-          color: white;
-          margin-bottom: 0px;
-          .italicized {
-            font-family: "IKOB Italic";
-          }
-        }
-      }
-    }
-  }
-}
-
 // locating the blocky shape at bottom of home page
 .banner-four-area {
   .shape {
@@ -424,89 +393,89 @@ section.homepage-notices {
   }
 }
 
-.hours-table {
-  background: #fafafa;
-  padding-top: 15rem;
-  padding-bottom: 15rem;
-  .container {
-    .the-table-itself {
-      background: white;
-      box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
-        rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
-      border-radius: 10px;
+// .hours-table {
+//   background: #fafafa;
+//   padding-top: 15rem;
+//   padding-bottom: 15rem;
+//   .container {
+//     .the-table-itself {
+//       background: white;
+//       box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+//         rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+//       border-radius: 10px;
 
-      .hours-table-brow {
-        border-bottom: 1.5px solid rgba(0, 0, 0, 0.05);
-        padding: 1rem;
-        background-image: url(/assets/images/svgs/antlers.svg);
-        background-repeat: no-repeat;
-        background-position: 96% 3%;
-        background-size: 47%;
-        .table-title-wrapper {
-          padding: 3rem;
-          padding-bottom: 2.5rem;
-          align-items: start;
-          margin-right: -15px;
-          .icon-box {
-            // padding: 10px;
-            background: rgb(249, 249, 249);
-            border-radius: 99px;
-            border: 1px solid rgb(238, 238, 238);
-            display: grid;
-            place-items: center;
-            width: 50px;
-            height: 50px;
-            margin-bottom: 2rem;
+//       .hours-table-brow {
+//         border-bottom: 1.5px solid rgba(0, 0, 0, 0.05);
+//         padding: 1rem;
+//         background-image: url(/assets/images/svgs/antlers.svg);
+//         background-repeat: no-repeat;
+//         background-position: 96% 3%;
+//         background-size: 47%;
+//         .table-title-wrapper {
+//           padding: 3rem;
+//           padding-bottom: 2.5rem;
+//           align-items: start;
+//           margin-right: -15px;
+//           .icon-box {
+//             // padding: 10px;
+//             background: rgb(249, 249, 249);
+//             border-radius: 99px;
+//             border: 1px solid rgb(238, 238, 238);
+//             display: grid;
+//             place-items: center;
+//             width: 50px;
+//             height: 50px;
+//             margin-bottom: 2rem;
 
-            .golf-icon {
-              width: 25px;
-              height: auto;
-              // margin-right: 1rem;
-            }
-          }
+//             .golf-icon {
+//               width: 25px;
+//               height: auto;
+//               // margin-right: 1rem;
+//             }
+//           }
 
-          h3 {
-            font-size: 30px;
-            margin-bottom: 0px;
-            line-height: 86%;
-          }
-        }
-      }
+//           h3 {
+//             font-size: 30px;
+//             margin-bottom: 0px;
+//             line-height: 86%;
+//           }
+//         }
+//       }
 
-      .some-tables {
-        padding: 4rem;
-        padding-top: 2.5rem;
-        padding-right: 6rem;
-        ol {
-          margin-inline-start: 20px;
-          margin-bottom: 0;
-          li {
-            padding-left: 20px;
-            counter-increment: step-counter;
-            line-height: 135%;
-            &::marker {
-              font-family: "Alte Haas Bold";
-            }
-            ul {
-              padding-left: 16px;
-              li {
-                margin: 0px;
-                &:first-of-type {
-                  margin-top: 6px;
-                }
-              }
-            }
-          }
-        }
-      }
-      .addendum {
-        border-top: 1.5px solid rgba(0, 0, 0, 0.05);
-        padding: 2.75rem 3rem 3.7rem 3rem;
-        line-height: 140%;
-      }
-    }
-  }
-}
+//       .some-tables {
+//         padding: 4rem;
+//         padding-top: 2.5rem;
+//         padding-right: 6rem;
+//         ol {
+//           margin-inline-start: 20px;
+//           margin-bottom: 0;
+//           li {
+//             padding-left: 20px;
+//             counter-increment: step-counter;
+//             line-height: 135%;
+//             &::marker {
+//               font-family: "Alte Haas Bold";
+//             }
+//             ul {
+//               padding-left: 16px;
+//               li {
+//                 margin: 0px;
+//                 &:first-of-type {
+//                   margin-top: 6px;
+//                 }
+//               }
+//             }
+//           }
+//         }
+//       }
+//       .addendum {
+//         border-top: 1.5px solid rgba(0, 0, 0, 0.05);
+//         padding: 2.75rem 3rem 3.7rem 3rem;
+//         line-height: 140%;
+//       }
+//     }
+//   }
+// }
 
 //* sidebar 'book tee time' button
 .sidebar-btn {
@@ -520,38 +489,24 @@ section.homepage-notices {
 }
 
 //* cornered box
-.cornered-container {
+.regular-container {
   margin-bottom: 0rem;
 }
-// from https://stackoverflow.com/questions/14387690/how-can-i-show-only-corner-borders
-.cornered-box {
-  color: white;
-  padding: 3rem;
-  max-width: 500px;
-  font-size: 18px;
-  line-height: 140%;
-  position: relative;
-  z-index: 6;
-
-  // corners ruleset
-  --b: 1px; /* thickness of the border */
-  --c: rgb(255, 255, 255); /* color of the border */
-  --w: 20px; /* width of border */
-  border: var(--b) solid #0000; /* space for the border */
-  --_g: #0000 90deg, var(--c) 0;
-  --_p: var(--w) var(--w) border-box no-repeat;
-
-  background: conic-gradient(
-        from 90deg at top var(--b) left var(--b),
-        var(--_g)
-      )
-      0 0 / var(--_p),
-    conic-gradient(from 180deg at top var(--b) right var(--b), var(--_g)) 100% 0 /
-      var(--_p),
-    conic-gradient(from 0deg at bottom var(--b) left var(--b), var(--_g)) 0 100% /
-      var(--_p),
-    conic-gradient(from -90deg at bottom var(--b) right var(--b), var(--_g))
-      100% 100% / var(--_p);
+.regular-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  max-width: 600px;
+  img.new-york {
+    width: 20%;
+    height: auto;
+  }
+  .regular-description {
+    padding-left: 4.5rem;
+    margin-left: 2rem;
+    border-left: 2px solid rgba(255, 255, 255, 0.164);
+    color: white;
+  }
 }
 
 //* pdf card
@@ -680,15 +635,55 @@ a {
 
 header {
   &.header--sticky {
-    .MM-logo-small {
-      display: none;
-    }
     &.sticky {
-      .MM-logo {
-        display: none;
+      .nav-area {
+        ul {
+          li {
+            a {
+              &:after {
+                bottom: 1.5rem;
+              }
+            }
+          }
+        }
       }
-      .MM-logo-small {
-        display: unset;
+    }
+  }
+}
+
+header {
+  &.header--sticky {
+    &.style-white {
+      .nav-area {
+        ul {
+          li {
+            a {
+              &:after {
+                background: white;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+header {
+  &.header--sticky {
+    &.style-white {
+      &.sticky {
+        .nav-area {
+          ul {
+            li {
+              a {
+                &:after {
+                  background: var(--color-primary);
+                }
+              }
+            }
+          }
+        }
       }
     }
   }
@@ -1799,7 +1794,7 @@ section.perks {
             .b {
               color: #262626;
               letter-spacing: 0.15px;
-              font-family: 'Inter Medium';
+              font-family: "Inter Medium";
             }
           }
         }
@@ -2122,8 +2117,8 @@ section.pro-shop-body {
     .note-title {
       font-size: 21px;
       padding-bottom: 0.5rem;
-      font-family: 'Inter Medium';
-      letter-spacing: -.3px;
+      font-family: "Inter Medium";
+      letter-spacing: -0.3px;
       line-height: 110%;
       /* -webkit-text-stroke: 0.1px; */
     }
@@ -2431,14 +2426,14 @@ section.pro-shop-body {
         list-style-type: none;
         li {
           padding-left: 2.5rem;
-          padding-bottom: .25rem;
+          padding-bottom: 0.25rem;
           font-size: 19px;
           letter-spacing: 0.5px;
           color: grey;
-          
+
           .b {
             color: #262626;
-            font-family: 'Inter Medium';
+            font-family: "Inter Medium";
           }
           &::marker {
             color: $accent;
@@ -2570,7 +2565,8 @@ footer {
                   }
                 }
 
-                &:hover {
+                &:hover,
+                &:active {
                   color: rgba(255, 255, 255, 0.65);
                 }
               }
@@ -2628,7 +2624,7 @@ footer {
     position: relative;
     top: -5px;
     width: fit-content;
-    background-color: #005142;
+    background-color: #01705a;
     .weather-heading {
       color: white;
       font-family: "IKOB";
@@ -2929,33 +2925,33 @@ footer {
       }
     }
   }
-  section.hours-table {
-    .container {
-      .the-table-itself {
-        overflow: hidden;
-        .hours-table-brow {
-          background-size: 49%;
-          .table-title-wrapper {
-            flex-direction: column;
-            padding: 2rem;
-            .icon-box {
-              margin-bottom: 1rem;
-            }
-            .title {
-              padding-top: 1rem;
-              line-height: 100%;
-            }
-          }
-        }
-        .some-tables {
-          padding-right: 4rem;
-          ol {
-            margin-inline-start: 10px;
-          }
-        }
-      }
-    }
-  }
+  // section.hours-table {
+  //   .container {
+  //     .the-table-itself {
+  //       overflow: hidden;
+  //       .hours-table-brow {
+  //         background-size: 49%;
+  //         .table-title-wrapper {
+  //           flex-direction: column;
+  //           padding: 2rem;
+  //           .icon-box {
+  //             margin-bottom: 1rem;
+  //           }
+  //           .title {
+  //             padding-top: 1rem;
+  //             line-height: 100%;
+  //           }
+  //         }
+  //       }
+  //       .some-tables {
+  //         padding-right: 4rem;
+  //         ol {
+  //           margin-inline-start: 10px;
+  //         }
+  //       }
+  //     }
+  //   }
+  // }
   section {
     &.perks {
       padding-top: 9rem;
@@ -3363,7 +3359,7 @@ footer {
       .container {
         .row {
           border-top: none;
-          
+
           [class*="col-"] {
             h3 {
               @include mobile-h3;

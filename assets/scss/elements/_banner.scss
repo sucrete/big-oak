@@ -388,7 +388,7 @@
   background-position: center;
   background-size: cover;
   @media screen and (min-width: 767px) and (max-width: 992px) {
-    .cornered-container {
+    .regular-container {
       margin-bottom: 6rem;
     }
   }
@@ -401,9 +401,9 @@
   }
   @media #{$sm-layout} {
     height: 600px !important;
-    .cornered-container {
+    .regular-container {
       margin-bottom: 3.25rem;
-      .cornered-box {
+      .regular-box {
         padding: 2.5rem;
         font-size: 17px;
       }
@@ -425,6 +425,37 @@
               font-size: 45px;
               letter-spacing: -2px;
             }
+          }
+        }
+      }
+    }
+  }
+}
+
+//* slider
+.slider-wrapper {
+  position: absolute;
+  left: 0;
+  bottom: 3rem;
+  z-index: 5;
+  .slider {
+    .slide {
+      .title-wrapper {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        .acorn {
+          width: 15px;
+          height: 15px;
+          margin: 0 10px 0 10px;
+        }
+        h2 {
+          font-size: 50px;
+          letter-spacing: 0px;
+          color: white;
+          margin-bottom: 0px;
+          .italicized {
+            font-family: "IKOB Italic";
           }
         }
       }
@@ -621,94 +652,15 @@ $subpage-height: 550px;
   }
 
   &.book-tee-time-banner {
-    background-image: url(../images/player-in-view.jpg);
+    background-image: url(../images/big-tournament.jpg);
     .overlay {
       background-image: $to-transparent-bg-gradient;
-    }
-  }
-  &.events-banner {
-    background-image: url(../images/marimack-bunch-of-carts.jpg);
-    .overlay {
-      background-image: $to-transparent-bg-gradient;
-    }
-  }
-  &.online-store-banner {
-    background-image: url(../images/marimack-bunch-of-carts-2.jpg);
-    .overlay {
-      background-image: $starker-gradient;
-    }
-  }
-  &.host-your-event-banner {
-    background-image: url(../images/people-cheersing.jpg);
-    .overlay {
-      background-image: $darker-background-gradient;
-    }
-    .title {
-      text-shadow: 0 0 10px rgba(0, 0, 0, 0.138);
-    }
-  }
-  &.membership-banner {
-    background-image: url(../images/young-man-in-trap.jpg);
-    .overlay {
-      background-image: $darker-background-gradient;
-    }
-    .title {
-      text-shadow: 0 0 10px rgba(0, 0, 0, 0.138);
     }
   }
   &.rates-banner {
     background-image: url(../images/golf-bag-in-foreground.jpg);
     .overlay {
       background-image: $darker-background-gradient;
-    }
-    .title {
-      text-shadow: 0 0 10px rgba(0, 0, 0, 0.138);
-    }
-  }
-  &.pro-shop-banner {
-    background-image: url(../images/low-angle-ball.jpg);
-    .overlay {
-      background-image: $darker-background-gradient;
-    }
-    .title {
-      text-shadow: 0 0 10px rgba(0, 0, 0, 0.138);
-    }
-  }
-  &.mens-league-banner {
-    background-image: url(../images/bunch-of-gents.jpg);
-    .overlay {
-      background-image: $darker-background-gradient;
-      opacity: 0.8;
-    }
-    .title {
-      text-shadow: 0 0 10px rgba(0, 0, 0, 0.138);
-    }
-  }
-  &.womens-league-banner {
-    background-image: url(../images/womens-league.jpg);
-    .overlay {
-      background-image: $darker-background-gradient;
-      opacity: 0.8;
-    }
-    .title {
-      text-shadow: 0 0 10px rgba(0, 0, 0, 0.138);
-    }
-  }
-  &.ladies-evening-league-banner {
-    background-image: url(../images/womens-league.jpg);
-    .overlay {
-      background-image: $darker-background-gradient;
-      opacity: 0.8;
-    }
-    .title {
-      text-shadow: 0 0 10px rgba(0, 0, 0, 0.138);
-    }
-  }
-  &.couples-league-banner {
-    background-image: url(../images/couple-2.jpg);
-    .overlay {
-      background-image: $darker-background-gradient;
-      opacity: 0.8;
     }
     .title {
       text-shadow: 0 0 10px rgba(0, 0, 0, 0.138);
@@ -723,44 +675,8 @@ $subpage-height: 550px;
       text-shadow: 0 0 10px rgba(0, 0, 0, 0.138);
     }
   }
-  &.open-tournaments-banner {
-    background-image: url(../images/train-of-golfers.jpg);
-    .overlay {
-      background-image: $darker-background-gradient;
-    }
-    .title {
-      text-shadow: 0 0 10px rgba(0, 0, 0, 0.138);
-    }
-  }
-  &.members-only-events-banner {
-    background-image: url(../images/group-of-friends.jpg);
-    .overlay {
-      background-image: $darker-background-gradient;
-    }
-    .title {
-      text-shadow: 0 0 10px rgba(0, 0, 0, 0.138);
-    }
-  }
-  &.instruction-banner {
-    background-image: url(../images/golf-instructor.jpg);
-    .overlay {
-      background-image: $darker-background-gradient;
-    }
-    .title {
-      text-shadow: 0 0 10px rgba(0, 0, 0, 0.138);
-    }
-  }
   &.contact-banner {
-    background-image: url(../images/player-in-view.jpg);
-    .overlay {
-      background-image: $darker-background-gradient;
-    }
-    .title {
-      text-shadow: 0 0 10px rgba(0, 0, 0, 0.138);
-    }
-  }
-  &.meet-the-staff-banner {
-    background-image: url(../images/golfer-with-perspective.jpg);
+    background-image: url(../images/big-vista-glow.jpg);
     .overlay {
       background-image: $darker-background-gradient;
     }
@@ -1160,4 +1076,36 @@ $subpage-height: 550px;
       background-position: center center;
     }
   }
+}
+
+//* Cornered Box
+// from https://stackoverflow.com/questions/14387690/how-can-i-show-only-corner-borders
+.cornered-box {
+  color: white;
+  padding: 3rem;
+  max-width: 500px;
+  font-size: 18px;
+  line-height: 140%;
+  position: relative;
+  z-index: 6;
+
+  // corners ruleset
+  --b: 1px; /* thickness of the border */
+  --c: rgb(255, 255, 255); /* color of the border */
+  --w: 20px; /* width of border */
+  border: var(--b) solid #0000; /* space for the border */
+  --_g: #0000 90deg, var(--c) 0;
+  --_p: var(--w) var(--w) border-box no-repeat;
+
+  background: conic-gradient(
+        from 90deg at top var(--b) left var(--b),
+        var(--_g)
+      )
+      0 0 / var(--_p),
+    conic-gradient(from 180deg at top var(--b) right var(--b), var(--_g)) 100% 0 /
+      var(--_p),
+    conic-gradient(from 0deg at bottom var(--b) left var(--b), var(--_g)) 0 100% /
+      var(--_p),
+    conic-gradient(from -90deg at bottom var(--b) right var(--b), var(--_g))
+      100% 100% / var(--_p);
 }

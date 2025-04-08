@@ -46,10 +46,10 @@
 /* Default  */
 @import url("https://fonts.googleapis.com/css2?family=Sono:wght@200..800&display=swap");
 :root {
-  --color-primary: #005b4b;
+  --color-primary: #00755e;
   --color-offset: #006452;
-  --color-secondary: #d09d3a;
-  --color-accent: #05816b;
+  --color-secondary: #948230;
+  --color-accent: #03a080;
   --light-green: #00be94;
   --border-color: #005b4b21;
   --grey-screen: rgba(0, 0, 0, 0.108);
@@ -7324,6 +7324,10 @@ ol ul {
   box-sizing: border-box;
 }
 
+html {
+  background-color: var(--color-primary);
+}
+
 article,
 aside,
 details,
@@ -12176,14 +12180,14 @@ Copyright (c) 2015 Daniel Eden
 
 .slyde:nth-child(1) {
   z-index: 10;
-  transform: rotate(-3deg) translate(-50%, -50%);
+  transform: rotate(-1deg) translate(-50%, -50%);
 }
 .slyde:nth-child(1):before {
   content: "1";
 }
 .slyde:nth-child(1).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(-3deg) translate(-50%, -15rem);
+  transform: rotate(-1deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -12198,14 +12202,14 @@ Copyright (c) 2015 Daniel Eden
 
 .slyde:nth-child(2) {
   z-index: 9;
-  transform: rotate(-2deg) translate(-50%, -50%);
+  transform: rotate(-3deg) translate(-50%, -50%);
 }
 .slyde:nth-child(2):before {
   content: "2";
 }
 .slyde:nth-child(2).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(-2deg) translate(-50%, -15rem);
+  transform: rotate(-3deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -12220,78 +12224,12 @@ Copyright (c) 2015 Daniel Eden
 
 .slyde:nth-child(3) {
   z-index: 8;
-  transform: rotate(3deg) translate(-50%, -50%);
+  transform: rotate(-2deg) translate(-50%, -50%);
 }
 .slyde:nth-child(3):before {
   content: "3";
 }
 .slyde:nth-child(3).leave {
-  transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(3deg) translate(-50%, -15rem);
-  opacity: 0;
-  pointer-events: none;
-  filter: sepia(0%);
-}
-.slyde.active {
-  transform: rotate(0) translate(-50%, -50%);
-  filter: sepia(0%);
-}
-.slyde.active article {
-  opacity: 1;
-}
-
-.slyde:nth-child(4) {
-  z-index: 7;
-  transform: rotate(-1deg) translate(-50%, -50%);
-}
-.slyde:nth-child(4):before {
-  content: "4";
-}
-.slyde:nth-child(4).leave {
-  transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(-1deg) translate(-50%, -15rem);
-  opacity: 0;
-  pointer-events: none;
-  filter: sepia(0%);
-}
-.slyde.active {
-  transform: rotate(0) translate(-50%, -50%);
-  filter: sepia(0%);
-}
-.slyde.active article {
-  opacity: 1;
-}
-
-.slyde:nth-child(5) {
-  z-index: 6;
-  transform: rotate(1deg) translate(-50%, -50%);
-}
-.slyde:nth-child(5):before {
-  content: "5";
-}
-.slyde:nth-child(5).leave {
-  transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(1deg) translate(-50%, -15rem);
-  opacity: 0;
-  pointer-events: none;
-  filter: sepia(0%);
-}
-.slyde.active {
-  transform: rotate(0) translate(-50%, -50%);
-  filter: sepia(0%);
-}
-.slyde.active article {
-  opacity: 1;
-}
-
-.slyde:nth-child(6) {
-  z-index: 5;
-  transform: rotate(-2deg) translate(-50%, -50%);
-}
-.slyde:nth-child(6):before {
-  content: "6";
-}
-.slyde:nth-child(6).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
   transform: rotate(-2deg) translate(-50%, -15rem);
   opacity: 0;
@@ -12306,14 +12244,14 @@ Copyright (c) 2015 Daniel Eden
   opacity: 1;
 }
 
-.slyde:nth-child(7) {
-  z-index: 4;
+.slyde:nth-child(4) {
+  z-index: 7;
   transform: rotate(2deg) translate(-50%, -50%);
 }
-.slyde:nth-child(7):before {
-  content: "7";
+.slyde:nth-child(4):before {
+  content: "4";
 }
-.slyde:nth-child(7).leave {
+.slyde:nth-child(4).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
   transform: rotate(2deg) translate(-50%, -15rem);
   opacity: 0;
@@ -12328,16 +12266,82 @@ Copyright (c) 2015 Daniel Eden
   opacity: 1;
 }
 
+.slyde:nth-child(5) {
+  z-index: 6;
+  transform: rotate(-1deg) translate(-50%, -50%);
+}
+.slyde:nth-child(5):before {
+  content: "5";
+}
+.slyde:nth-child(5).leave {
+  transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
+  transform: rotate(-1deg) translate(-50%, -15rem);
+  opacity: 0;
+  pointer-events: none;
+  filter: sepia(0%);
+}
+.slyde.active {
+  transform: rotate(0) translate(-50%, -50%);
+  filter: sepia(0%);
+}
+.slyde.active article {
+  opacity: 1;
+}
+
+.slyde:nth-child(6) {
+  z-index: 5;
+  transform: rotate(-1deg) translate(-50%, -50%);
+}
+.slyde:nth-child(6):before {
+  content: "6";
+}
+.slyde:nth-child(6).leave {
+  transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
+  transform: rotate(-1deg) translate(-50%, -15rem);
+  opacity: 0;
+  pointer-events: none;
+  filter: sepia(0%);
+}
+.slyde.active {
+  transform: rotate(0) translate(-50%, -50%);
+  filter: sepia(0%);
+}
+.slyde.active article {
+  opacity: 1;
+}
+
+.slyde:nth-child(7) {
+  z-index: 4;
+  transform: rotate(-3deg) translate(-50%, -50%);
+}
+.slyde:nth-child(7):before {
+  content: "7";
+}
+.slyde:nth-child(7).leave {
+  transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
+  transform: rotate(-3deg) translate(-50%, -15rem);
+  opacity: 0;
+  pointer-events: none;
+  filter: sepia(0%);
+}
+.slyde.active {
+  transform: rotate(0) translate(-50%, -50%);
+  filter: sepia(0%);
+}
+.slyde.active article {
+  opacity: 1;
+}
+
 .slyde:nth-child(8) {
   z-index: 3;
-  transform: rotate(0deg) translate(-50%, -50%);
+  transform: rotate(2deg) translate(-50%, -50%);
 }
 .slyde:nth-child(8):before {
   content: "8";
 }
 .slyde:nth-child(8).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(0deg) translate(-50%, -15rem);
+  transform: rotate(2deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -12352,14 +12356,14 @@ Copyright (c) 2015 Daniel Eden
 
 .slyde:nth-child(9) {
   z-index: 2;
-  transform: rotate(-1deg) translate(-50%, -50%);
+  transform: rotate(0deg) translate(-50%, -50%);
 }
 .slyde:nth-child(9):before {
   content: "9";
 }
 .slyde:nth-child(9).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(-1deg) translate(-50%, -15rem);
+  transform: rotate(0deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -12937,6 +12941,7 @@ Copyright (c) 2015 Daniel Eden
   gap: 30px;
   width: unset;
   max-width: unset;
+  padding-left: 1.5rem;
 }
 .button-area-right-header .menu-btn-toggle {
   display: none;
@@ -13027,7 +13032,7 @@ Copyright (c) 2015 Daniel Eden
   margin: 0;
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 30px;
 }
 .nav-area ul li {
   margin: 0;
@@ -13035,14 +13040,34 @@ Copyright (c) 2015 Daniel Eden
 }
 .nav-area ul li a {
   padding: 38px 0;
-  display: block;
+  display: inline-block;
   color: var(--color-primary);
   font-size: 16px;
   font-family: "Inter Medium";
   letter-spacing: -0.2px;
+  position: relative;
+  text-decoration: none;
+}
+.nav-area ul li a:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 3.25rem;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: var(--color-primary);
+  transition: width 0.3s ease 0s, left 0.3s ease 0s, opacity 0.3s ease 0s;
+  width: 0;
+  opacity: 0;
 }
 .nav-area ul li a:hover {
   color: var(--color-primary);
+}
+.nav-area ul li a:hover:after {
+  width: 100%;
+  left: 0;
+  opacity: 1;
 }
 .nav-area ul li a .fa-duotone {
   -webkit-text-stroke: 0.5px;
@@ -13459,11 +13484,11 @@ li.has-dropdown:hover .submenu li a {
   border: 1px solid var(--color-accent);
 }
 .rts-btn.header-btn {
-  background: #cf9d39;
+  background: var(--color-primary);
   -webkit-text-stroke: 0.3px;
 }
 .rts-btn.header-btn::after {
-  background-color: #c28919;
+  background-color: #948230;
 }
 
 .arrow-btn img {
@@ -13872,7 +13897,7 @@ li.has-dropdown:hover .submenu li a {
   background-size: cover;
 }
 @media screen and (min-width: 767px) and (max-width: 992px) {
-  .banner-four-bg .cornered-container {
+  .banner-four-bg .regular-container {
     margin-bottom: 6rem;
   }
 }
@@ -13885,10 +13910,10 @@ li.has-dropdown:hover .submenu li a {
   .banner-four-bg {
     height: 600px !important;
   }
-  .banner-four-bg .cornered-container {
+  .banner-four-bg .regular-container {
     margin-bottom: 3.25rem;
   }
-  .banner-four-bg .cornered-container .cornered-box {
+  .banner-four-bg .regular-container .regular-box {
     padding: 2.5rem;
     font-size: 17px;
   }
@@ -13906,6 +13931,32 @@ li.has-dropdown:hover .submenu li a {
     font-size: 45px;
     letter-spacing: -2px;
   }
+}
+
+.slider-wrapper {
+  position: absolute;
+  left: 0;
+  bottom: 3rem;
+  z-index: 5;
+}
+.slider-wrapper .slider .slide .title-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.slider-wrapper .slider .slide .title-wrapper .acorn {
+  width: 15px;
+  height: 15px;
+  margin: 0 10px 0 10px;
+}
+.slider-wrapper .slider .slide .title-wrapper h2 {
+  font-size: 50px;
+  letter-spacing: 0px;
+  color: white;
+  margin-bottom: 0px;
+}
+.slider-wrapper .slider .slide .title-wrapper h2 .italicized {
+  font-family: "IKOB Italic";
 }
 
 .banner-four-area {
@@ -13979,40 +14030,10 @@ li.has-dropdown:hover .submenu li a {
   background-image: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.29) 0%, hsla(0, 0%, 0%, 0.288) 8.1%, hsla(0, 0%, 0%, 0.283) 15.5%, hsla(0, 0%, 0%, 0.274) 22.5%, hsla(0, 0%, 0%, 0.264) 29%, hsla(0, 0%, 0%, 0.251) 35.3%, hsla(0, 0%, 0%, 0.237) 41.2%, hsla(0, 0%, 0%, 0.222) 47.1%, hsla(0, 0%, 0%, 0.208) 52.9%, hsla(0, 0%, 0%, 0.193) 58.8%, hsla(0, 0%, 0%, 0.179) 64.7%, hsla(0, 0%, 0%, 0.166) 71%, hsla(0, 0%, 0%, 0.156) 77.5%, hsla(0, 0%, 0%, 0.147) 84.5%, hsla(0, 0%, 0%, 0.142) 91.9%, hsla(0, 0%, 0%, 0.14) 100%);
 }
 .banner-subpage.book-tee-time-banner {
-  background-image: url(../images/player-in-view.jpg);
+  background-image: url(../images/big-tournament.jpg);
 }
 .banner-subpage.book-tee-time-banner .overlay {
   background-image: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.72) 0%, hsla(0, 0%, 0%, 0.585) 4.2%, hsla(0, 0%, 0%, 0.469) 7.4%, hsla(0, 0%, 0%, 0.369) 10%, hsla(0, 0%, 0%, 0.284) 12.2%, hsla(0, 0%, 0%, 0.213) 14.4%, hsla(0, 0%, 0%, 0.156) 16.8%, hsla(0, 0%, 0%, 0.109) 19.7%, hsla(0, 0%, 0%, 0.073) 23.5%, hsla(0, 0%, 0%, 0.046) 28.5%, hsla(0, 0%, 0%, 0.027) 35%, hsla(0, 0%, 0%, 0.014) 43.2%, hsla(0, 0%, 0%, 0.006) 53.5%, hsla(0, 0%, 0%, 0.002) 66.2%, hsla(0, 0%, 0%, 0) 81.6%, hsla(0, 0%, 0%, 0) 100%);
-}
-.banner-subpage.events-banner {
-  background-image: url(../images/marimack-bunch-of-carts.jpg);
-}
-.banner-subpage.events-banner .overlay {
-  background-image: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.72) 0%, hsla(0, 0%, 0%, 0.585) 4.2%, hsla(0, 0%, 0%, 0.469) 7.4%, hsla(0, 0%, 0%, 0.369) 10%, hsla(0, 0%, 0%, 0.284) 12.2%, hsla(0, 0%, 0%, 0.213) 14.4%, hsla(0, 0%, 0%, 0.156) 16.8%, hsla(0, 0%, 0%, 0.109) 19.7%, hsla(0, 0%, 0%, 0.073) 23.5%, hsla(0, 0%, 0%, 0.046) 28.5%, hsla(0, 0%, 0%, 0.027) 35%, hsla(0, 0%, 0%, 0.014) 43.2%, hsla(0, 0%, 0%, 0.006) 53.5%, hsla(0, 0%, 0%, 0.002) 66.2%, hsla(0, 0%, 0%, 0) 81.6%, hsla(0, 0%, 0%, 0) 100%);
-}
-.banner-subpage.online-store-banner {
-  background-image: url(../images/marimack-bunch-of-carts-2.jpg);
-}
-.banner-subpage.online-store-banner .overlay {
-  background-image: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.76) 0%, hsla(0, 0%, 0%, 0.706) 7.1%, hsla(0, 0%, 0%, 0.655) 13.2%, hsla(0, 0%, 0%, 0.609) 18.3%, hsla(0, 0%, 0%, 0.566) 22.7%, hsla(0, 0%, 0%, 0.528) 26.8%, hsla(0, 0%, 0%, 0.492) 30.7%, hsla(0, 0%, 0%, 0.461) 34.8%, hsla(0, 0%, 0%, 0.432) 39.1%, hsla(0, 0%, 0%, 0.407) 44.1%, hsla(0, 0%, 0%, 0.385) 49.9%, hsla(0, 0%, 0%, 0.366) 56.7%, hsla(0, 0%, 0%, 0.351) 64.9%, hsla(0, 0%, 0%, 0.338) 74.7%, hsla(0, 0%, 0%, 0.327) 86.3%, hsla(0, 0%, 0%, 0.32) 100%);
-}
-.banner-subpage.host-your-event-banner {
-  background-image: url(../images/people-cheersing.jpg);
-}
-.banner-subpage.host-your-event-banner .overlay {
-  background-image: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.6) 0%, hsla(0, 0%, 0%, 0.594) 2.7%, hsla(0, 0%, 0%, 0.576) 5.2%, hsla(0, 0%, 0%, 0.548) 7.7%, hsla(0, 0%, 0%, 0.512) 10.4%, hsla(0, 0%, 0%, 0.47) 13.5%, hsla(0, 0%, 0%, 0.424) 17.1%, hsla(0, 0%, 0%, 0.375) 21.3%, hsla(0, 0%, 0%, 0.325) 26.4%, hsla(0, 0%, 0%, 0.276) 32.5%, hsla(0, 0%, 0%, 0.23) 39.9%, hsla(0, 0%, 0%, 0.188) 48.5%, hsla(0, 0%, 0%, 0.152) 58.7%, hsla(0, 0%, 0%, 0.124) 70.6%, hsla(0, 0%, 0%, 0.106) 84.3%, hsla(0, 0%, 0%, 0.1) 100%);
-}
-.banner-subpage.host-your-event-banner .title {
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.138);
-}
-.banner-subpage.membership-banner {
-  background-image: url(../images/young-man-in-trap.jpg);
-}
-.banner-subpage.membership-banner .overlay {
-  background-image: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.6) 0%, hsla(0, 0%, 0%, 0.594) 2.7%, hsla(0, 0%, 0%, 0.576) 5.2%, hsla(0, 0%, 0%, 0.548) 7.7%, hsla(0, 0%, 0%, 0.512) 10.4%, hsla(0, 0%, 0%, 0.47) 13.5%, hsla(0, 0%, 0%, 0.424) 17.1%, hsla(0, 0%, 0%, 0.375) 21.3%, hsla(0, 0%, 0%, 0.325) 26.4%, hsla(0, 0%, 0%, 0.276) 32.5%, hsla(0, 0%, 0%, 0.23) 39.9%, hsla(0, 0%, 0%, 0.188) 48.5%, hsla(0, 0%, 0%, 0.152) 58.7%, hsla(0, 0%, 0%, 0.124) 70.6%, hsla(0, 0%, 0%, 0.106) 84.3%, hsla(0, 0%, 0%, 0.1) 100%);
-}
-.banner-subpage.membership-banner .title {
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.138);
 }
 .banner-subpage.rates-banner {
   background-image: url(../images/golf-bag-in-foreground.jpg);
@@ -14021,55 +14042,6 @@ li.has-dropdown:hover .submenu li a {
   background-image: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.6) 0%, hsla(0, 0%, 0%, 0.594) 2.7%, hsla(0, 0%, 0%, 0.576) 5.2%, hsla(0, 0%, 0%, 0.548) 7.7%, hsla(0, 0%, 0%, 0.512) 10.4%, hsla(0, 0%, 0%, 0.47) 13.5%, hsla(0, 0%, 0%, 0.424) 17.1%, hsla(0, 0%, 0%, 0.375) 21.3%, hsla(0, 0%, 0%, 0.325) 26.4%, hsla(0, 0%, 0%, 0.276) 32.5%, hsla(0, 0%, 0%, 0.23) 39.9%, hsla(0, 0%, 0%, 0.188) 48.5%, hsla(0, 0%, 0%, 0.152) 58.7%, hsla(0, 0%, 0%, 0.124) 70.6%, hsla(0, 0%, 0%, 0.106) 84.3%, hsla(0, 0%, 0%, 0.1) 100%);
 }
 .banner-subpage.rates-banner .title {
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.138);
-}
-.banner-subpage.pro-shop-banner {
-  background-image: url(../images/low-angle-ball.jpg);
-}
-.banner-subpage.pro-shop-banner .overlay {
-  background-image: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.6) 0%, hsla(0, 0%, 0%, 0.594) 2.7%, hsla(0, 0%, 0%, 0.576) 5.2%, hsla(0, 0%, 0%, 0.548) 7.7%, hsla(0, 0%, 0%, 0.512) 10.4%, hsla(0, 0%, 0%, 0.47) 13.5%, hsla(0, 0%, 0%, 0.424) 17.1%, hsla(0, 0%, 0%, 0.375) 21.3%, hsla(0, 0%, 0%, 0.325) 26.4%, hsla(0, 0%, 0%, 0.276) 32.5%, hsla(0, 0%, 0%, 0.23) 39.9%, hsla(0, 0%, 0%, 0.188) 48.5%, hsla(0, 0%, 0%, 0.152) 58.7%, hsla(0, 0%, 0%, 0.124) 70.6%, hsla(0, 0%, 0%, 0.106) 84.3%, hsla(0, 0%, 0%, 0.1) 100%);
-}
-.banner-subpage.pro-shop-banner .title {
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.138);
-}
-.banner-subpage.mens-league-banner {
-  background-image: url(../images/bunch-of-gents.jpg);
-}
-.banner-subpage.mens-league-banner .overlay {
-  background-image: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.6) 0%, hsla(0, 0%, 0%, 0.594) 2.7%, hsla(0, 0%, 0%, 0.576) 5.2%, hsla(0, 0%, 0%, 0.548) 7.7%, hsla(0, 0%, 0%, 0.512) 10.4%, hsla(0, 0%, 0%, 0.47) 13.5%, hsla(0, 0%, 0%, 0.424) 17.1%, hsla(0, 0%, 0%, 0.375) 21.3%, hsla(0, 0%, 0%, 0.325) 26.4%, hsla(0, 0%, 0%, 0.276) 32.5%, hsla(0, 0%, 0%, 0.23) 39.9%, hsla(0, 0%, 0%, 0.188) 48.5%, hsla(0, 0%, 0%, 0.152) 58.7%, hsla(0, 0%, 0%, 0.124) 70.6%, hsla(0, 0%, 0%, 0.106) 84.3%, hsla(0, 0%, 0%, 0.1) 100%);
-  opacity: 0.8;
-}
-.banner-subpage.mens-league-banner .title {
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.138);
-}
-.banner-subpage.womens-league-banner {
-  background-image: url(../images/womens-league.jpg);
-}
-.banner-subpage.womens-league-banner .overlay {
-  background-image: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.6) 0%, hsla(0, 0%, 0%, 0.594) 2.7%, hsla(0, 0%, 0%, 0.576) 5.2%, hsla(0, 0%, 0%, 0.548) 7.7%, hsla(0, 0%, 0%, 0.512) 10.4%, hsla(0, 0%, 0%, 0.47) 13.5%, hsla(0, 0%, 0%, 0.424) 17.1%, hsla(0, 0%, 0%, 0.375) 21.3%, hsla(0, 0%, 0%, 0.325) 26.4%, hsla(0, 0%, 0%, 0.276) 32.5%, hsla(0, 0%, 0%, 0.23) 39.9%, hsla(0, 0%, 0%, 0.188) 48.5%, hsla(0, 0%, 0%, 0.152) 58.7%, hsla(0, 0%, 0%, 0.124) 70.6%, hsla(0, 0%, 0%, 0.106) 84.3%, hsla(0, 0%, 0%, 0.1) 100%);
-  opacity: 0.8;
-}
-.banner-subpage.womens-league-banner .title {
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.138);
-}
-.banner-subpage.ladies-evening-league-banner {
-  background-image: url(../images/womens-league.jpg);
-}
-.banner-subpage.ladies-evening-league-banner .overlay {
-  background-image: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.6) 0%, hsla(0, 0%, 0%, 0.594) 2.7%, hsla(0, 0%, 0%, 0.576) 5.2%, hsla(0, 0%, 0%, 0.548) 7.7%, hsla(0, 0%, 0%, 0.512) 10.4%, hsla(0, 0%, 0%, 0.47) 13.5%, hsla(0, 0%, 0%, 0.424) 17.1%, hsla(0, 0%, 0%, 0.375) 21.3%, hsla(0, 0%, 0%, 0.325) 26.4%, hsla(0, 0%, 0%, 0.276) 32.5%, hsla(0, 0%, 0%, 0.23) 39.9%, hsla(0, 0%, 0%, 0.188) 48.5%, hsla(0, 0%, 0%, 0.152) 58.7%, hsla(0, 0%, 0%, 0.124) 70.6%, hsla(0, 0%, 0%, 0.106) 84.3%, hsla(0, 0%, 0%, 0.1) 100%);
-  opacity: 0.8;
-}
-.banner-subpage.ladies-evening-league-banner .title {
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.138);
-}
-.banner-subpage.couples-league-banner {
-  background-image: url(../images/couple-2.jpg);
-}
-.banner-subpage.couples-league-banner .overlay {
-  background-image: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.6) 0%, hsla(0, 0%, 0%, 0.594) 2.7%, hsla(0, 0%, 0%, 0.576) 5.2%, hsla(0, 0%, 0%, 0.548) 7.7%, hsla(0, 0%, 0%, 0.512) 10.4%, hsla(0, 0%, 0%, 0.47) 13.5%, hsla(0, 0%, 0%, 0.424) 17.1%, hsla(0, 0%, 0%, 0.375) 21.3%, hsla(0, 0%, 0%, 0.325) 26.4%, hsla(0, 0%, 0%, 0.276) 32.5%, hsla(0, 0%, 0%, 0.23) 39.9%, hsla(0, 0%, 0%, 0.188) 48.5%, hsla(0, 0%, 0%, 0.152) 58.7%, hsla(0, 0%, 0%, 0.124) 70.6%, hsla(0, 0%, 0%, 0.106) 84.3%, hsla(0, 0%, 0%, 0.1) 100%);
-  opacity: 0.8;
-}
-.banner-subpage.couples-league-banner .title {
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.138);
 }
 .banner-subpage.calendar-banner {
@@ -14081,49 +14053,13 @@ li.has-dropdown:hover .submenu li a {
 .banner-subpage.calendar-banner .title {
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.138);
 }
-.banner-subpage.open-tournaments-banner {
-  background-image: url(../images/train-of-golfers.jpg);
-}
-.banner-subpage.open-tournaments-banner .overlay {
-  background-image: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.6) 0%, hsla(0, 0%, 0%, 0.594) 2.7%, hsla(0, 0%, 0%, 0.576) 5.2%, hsla(0, 0%, 0%, 0.548) 7.7%, hsla(0, 0%, 0%, 0.512) 10.4%, hsla(0, 0%, 0%, 0.47) 13.5%, hsla(0, 0%, 0%, 0.424) 17.1%, hsla(0, 0%, 0%, 0.375) 21.3%, hsla(0, 0%, 0%, 0.325) 26.4%, hsla(0, 0%, 0%, 0.276) 32.5%, hsla(0, 0%, 0%, 0.23) 39.9%, hsla(0, 0%, 0%, 0.188) 48.5%, hsla(0, 0%, 0%, 0.152) 58.7%, hsla(0, 0%, 0%, 0.124) 70.6%, hsla(0, 0%, 0%, 0.106) 84.3%, hsla(0, 0%, 0%, 0.1) 100%);
-}
-.banner-subpage.open-tournaments-banner .title {
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.138);
-}
-.banner-subpage.members-only-events-banner {
-  background-image: url(../images/group-of-friends.jpg);
-}
-.banner-subpage.members-only-events-banner .overlay {
-  background-image: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.6) 0%, hsla(0, 0%, 0%, 0.594) 2.7%, hsla(0, 0%, 0%, 0.576) 5.2%, hsla(0, 0%, 0%, 0.548) 7.7%, hsla(0, 0%, 0%, 0.512) 10.4%, hsla(0, 0%, 0%, 0.47) 13.5%, hsla(0, 0%, 0%, 0.424) 17.1%, hsla(0, 0%, 0%, 0.375) 21.3%, hsla(0, 0%, 0%, 0.325) 26.4%, hsla(0, 0%, 0%, 0.276) 32.5%, hsla(0, 0%, 0%, 0.23) 39.9%, hsla(0, 0%, 0%, 0.188) 48.5%, hsla(0, 0%, 0%, 0.152) 58.7%, hsla(0, 0%, 0%, 0.124) 70.6%, hsla(0, 0%, 0%, 0.106) 84.3%, hsla(0, 0%, 0%, 0.1) 100%);
-}
-.banner-subpage.members-only-events-banner .title {
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.138);
-}
-.banner-subpage.instruction-banner {
-  background-image: url(../images/golf-instructor.jpg);
-}
-.banner-subpage.instruction-banner .overlay {
-  background-image: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.6) 0%, hsla(0, 0%, 0%, 0.594) 2.7%, hsla(0, 0%, 0%, 0.576) 5.2%, hsla(0, 0%, 0%, 0.548) 7.7%, hsla(0, 0%, 0%, 0.512) 10.4%, hsla(0, 0%, 0%, 0.47) 13.5%, hsla(0, 0%, 0%, 0.424) 17.1%, hsla(0, 0%, 0%, 0.375) 21.3%, hsla(0, 0%, 0%, 0.325) 26.4%, hsla(0, 0%, 0%, 0.276) 32.5%, hsla(0, 0%, 0%, 0.23) 39.9%, hsla(0, 0%, 0%, 0.188) 48.5%, hsla(0, 0%, 0%, 0.152) 58.7%, hsla(0, 0%, 0%, 0.124) 70.6%, hsla(0, 0%, 0%, 0.106) 84.3%, hsla(0, 0%, 0%, 0.1) 100%);
-}
-.banner-subpage.instruction-banner .title {
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.138);
-}
 .banner-subpage.contact-banner {
-  background-image: url(../images/player-in-view.jpg);
+  background-image: url(../images/big-vista-glow.jpg);
 }
 .banner-subpage.contact-banner .overlay {
   background-image: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.6) 0%, hsla(0, 0%, 0%, 0.594) 2.7%, hsla(0, 0%, 0%, 0.576) 5.2%, hsla(0, 0%, 0%, 0.548) 7.7%, hsla(0, 0%, 0%, 0.512) 10.4%, hsla(0, 0%, 0%, 0.47) 13.5%, hsla(0, 0%, 0%, 0.424) 17.1%, hsla(0, 0%, 0%, 0.375) 21.3%, hsla(0, 0%, 0%, 0.325) 26.4%, hsla(0, 0%, 0%, 0.276) 32.5%, hsla(0, 0%, 0%, 0.23) 39.9%, hsla(0, 0%, 0%, 0.188) 48.5%, hsla(0, 0%, 0%, 0.152) 58.7%, hsla(0, 0%, 0%, 0.124) 70.6%, hsla(0, 0%, 0%, 0.106) 84.3%, hsla(0, 0%, 0%, 0.1) 100%);
 }
 .banner-subpage.contact-banner .title {
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.138);
-}
-.banner-subpage.meet-the-staff-banner {
-  background-image: url(../images/golfer-with-perspective.jpg);
-}
-.banner-subpage.meet-the-staff-banner .overlay {
-  background-image: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.6) 0%, hsla(0, 0%, 0%, 0.594) 2.7%, hsla(0, 0%, 0%, 0.576) 5.2%, hsla(0, 0%, 0%, 0.548) 7.7%, hsla(0, 0%, 0%, 0.512) 10.4%, hsla(0, 0%, 0%, 0.47) 13.5%, hsla(0, 0%, 0%, 0.424) 17.1%, hsla(0, 0%, 0%, 0.375) 21.3%, hsla(0, 0%, 0%, 0.325) 26.4%, hsla(0, 0%, 0%, 0.276) 32.5%, hsla(0, 0%, 0%, 0.23) 39.9%, hsla(0, 0%, 0%, 0.188) 48.5%, hsla(0, 0%, 0%, 0.152) 58.7%, hsla(0, 0%, 0%, 0.124) 70.6%, hsla(0, 0%, 0%, 0.106) 84.3%, hsla(0, 0%, 0%, 0.1) 100%);
-}
-.banner-subpage.meet-the-staff-banner .title {
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.138);
 }
 @media only screen and (max-width: 767px) {
@@ -14470,6 +14406,23 @@ li.has-dropdown:hover .submenu li a {
     background-position: center center;
   }
 }
+.cornered-box {
+  color: white;
+  padding: 3rem;
+  max-width: 500px;
+  font-size: 18px;
+  line-height: 140%;
+  position: relative;
+  z-index: 6;
+  --b: 1px; /* thickness of the border */
+  --c: rgb(255, 255, 255); /* color of the border */
+  --w: 20px; /* width of border */
+  border: var(--b) solid rgba(0, 0, 0, 0); /* space for the border */
+  --_g: #0000 90deg, var(--c) 0;
+  --_p: var(--w) var(--w) border-box no-repeat;
+  background: conic-gradient(from 90deg at top var(--b) left var(--b), var(--_g)) 0 0/var(--_p), conic-gradient(from 180deg at top var(--b) right var(--b), var(--_g)) 100% 0/var(--_p), conic-gradient(from 0deg at bottom var(--b) left var(--b), var(--_g)) 0 100%/var(--_p), conic-gradient(from -90deg at bottom var(--b) right var(--b), var(--_g)) 100% 100%/var(--_p);
+}
+
 .about-banner-area-bg {
   background-image: url(../images/about/01.webp);
   height: 750px !important;
@@ -21405,32 +21358,6 @@ section.sponsors-section-on-open-tournaments-page .container .row [class*=col] .
   }
 }
 
-.slider-wrapper {
-  position: absolute;
-  left: 0;
-  bottom: 3rem;
-  z-index: 5;
-}
-.slider-wrapper .slider .slide .title-wrapper {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-.slider-wrapper .slider .slide .title-wrapper img {
-  width: 65px;
-  height: auto;
-  margin: 0 70px 0 80px;
-}
-.slider-wrapper .slider .slide .title-wrapper h2 {
-  font-size: 70px;
-  letter-spacing: -4px;
-  color: white;
-  margin-bottom: 0px;
-}
-.slider-wrapper .slider .slide .title-wrapper h2 .italicized {
-  font-family: "IKOB Italic";
-}
-
 .banner-four-area .shape {
   bottom: 9rem;
   z-index: 3;
@@ -21551,81 +21478,6 @@ section.homepage-notices .container .row .single-blog-area-start:hover {
   box-shadow: rgba(118, 118, 118, 0.04) 0px 0px 0px 1px, rgba(69, 69, 69, 0.04) 0px 1px 1px -0.5px, rgba(64, 64, 64, 0.04) 0px 3px 3px -1.5px, rgba(63, 63, 63, 0.04) 0px 6px 6px -3px, rgba(117, 117, 117, 0.04) 0px 12px 12px -6px, rgba(124, 124, 124, 0.04) 0px 24px 24px -12px;
 }
 
-.hours-table {
-  background: #fafafa;
-  padding-top: 15rem;
-  padding-bottom: 15rem;
-}
-.hours-table .container .the-table-itself {
-  background: white;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
-  border-radius: 10px;
-}
-.hours-table .container .the-table-itself .hours-table-brow {
-  border-bottom: 1.5px solid rgba(0, 0, 0, 0.05);
-  padding: 1rem;
-  background-image: url(/assets/images/svgs/antlers.svg);
-  background-repeat: no-repeat;
-  background-position: 96% 3%;
-  background-size: 47%;
-}
-.hours-table .container .the-table-itself .hours-table-brow .table-title-wrapper {
-  padding: 3rem;
-  padding-bottom: 2.5rem;
-  align-items: start;
-  margin-right: -15px;
-}
-.hours-table .container .the-table-itself .hours-table-brow .table-title-wrapper .icon-box {
-  background: rgb(249, 249, 249);
-  border-radius: 99px;
-  border: 1px solid rgb(238, 238, 238);
-  display: grid;
-  place-items: center;
-  width: 50px;
-  height: 50px;
-  margin-bottom: 2rem;
-}
-.hours-table .container .the-table-itself .hours-table-brow .table-title-wrapper .icon-box .golf-icon {
-  width: 25px;
-  height: auto;
-}
-.hours-table .container .the-table-itself .hours-table-brow .table-title-wrapper h3 {
-  font-size: 30px;
-  margin-bottom: 0px;
-  line-height: 86%;
-}
-.hours-table .container .the-table-itself .some-tables {
-  padding: 4rem;
-  padding-top: 2.5rem;
-  padding-right: 6rem;
-}
-.hours-table .container .the-table-itself .some-tables ol {
-  margin-inline-start: 20px;
-  margin-bottom: 0;
-}
-.hours-table .container .the-table-itself .some-tables ol li {
-  padding-left: 20px;
-  counter-increment: step-counter;
-  line-height: 135%;
-}
-.hours-table .container .the-table-itself .some-tables ol li::marker {
-  font-family: "Alte Haas Bold";
-}
-.hours-table .container .the-table-itself .some-tables ol li ul {
-  padding-left: 16px;
-}
-.hours-table .container .the-table-itself .some-tables ol li ul li {
-  margin: 0px;
-}
-.hours-table .container .the-table-itself .some-tables ol li ul li:first-of-type {
-  margin-top: 6px;
-}
-.hours-table .container .the-table-itself .addendum {
-  border-top: 1.5px solid rgba(0, 0, 0, 0.05);
-  padding: 2.75rem 3rem 3.7rem 3rem;
-  line-height: 140%;
-}
-
 .sidebar-btn {
   margin-left: 0px;
   margin-top: 4rem;
@@ -21636,25 +21488,25 @@ section.homepage-notices .container .row .single-blog-area-start:hover {
   background-color: var(--color-primary) !important;
 }
 
-.cornered-container {
+.regular-container {
   margin-bottom: 0rem;
 }
 
-.cornered-box {
+.regular-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  max-width: 600px;
+}
+.regular-box img.new-york {
+  width: 20%;
+  height: auto;
+}
+.regular-box .regular-description {
+  padding-left: 4.5rem;
+  margin-left: 2rem;
+  border-left: 2px solid rgba(255, 255, 255, 0.164);
   color: white;
-  padding: 3rem;
-  max-width: 500px;
-  font-size: 18px;
-  line-height: 140%;
-  position: relative;
-  z-index: 6;
-  --b: 1px; /* thickness of the border */
-  --c: rgb(255, 255, 255); /* color of the border */
-  --w: 20px; /* width of border */
-  border: var(--b) solid rgba(0, 0, 0, 0); /* space for the border */
-  --_g: #0000 90deg, var(--c) 0;
-  --_p: var(--w) var(--w) border-box no-repeat;
-  background: conic-gradient(from 90deg at top var(--b) left var(--b), var(--_g)) 0 0/var(--_p), conic-gradient(from 180deg at top var(--b) right var(--b), var(--_g)) 100% 0/var(--_p), conic-gradient(from 0deg at bottom var(--b) left var(--b), var(--_g)) 0 100%/var(--_p), conic-gradient(from -90deg at bottom var(--b) right var(--b), var(--_g)) 100% 100%/var(--_p);
 }
 
 a .single-solution-style-one {
@@ -21760,14 +21612,16 @@ a .single-solution-style-one:hover .bottom .card-subheading .arrow path {
   fill: white;
 }
 
-header.header--sticky .MM-logo-small {
-  display: none;
+header.header--sticky.sticky .nav-area ul li a:after {
+  bottom: 1.5rem;
 }
-header.header--sticky.sticky .MM-logo {
-  display: none;
+
+header.header--sticky.style-white .nav-area ul li a:after {
+  background: white;
 }
-header.header--sticky.sticky .MM-logo-small {
-  display: unset;
+
+header.header--sticky.style-white.sticky .nav-area ul li a:after {
+  background: var(--color-primary);
 }
 
 header.header-area-four.header--sticky:not(.sticky).subpage .container .row .header-four-wrapper .logo .MM-logo path,
@@ -23189,7 +23043,7 @@ footer .container .row .logo-column div:not(.that-group) .link-group .contact-st
   width: 19px;
   bottom: -2px;
 }
-footer .container .row .logo-column div:not(.that-group) .link-group .contact-stack .link:hover {
+footer .container .row .logo-column div:not(.that-group) .link-group .contact-stack .link:hover, footer .container .row .logo-column div:not(.that-group) .link-group .contact-stack .link:active {
   color: rgba(255, 255, 255, 0.65);
 }
 footer .container .row .logo-column div:not(.that-group) .link-group .social-stack {
@@ -23217,7 +23071,7 @@ footer .weather-card {
   position: relative;
   top: -5px;
   width: fit-content;
-  background-color: #005142;
+  background-color: #01705a;
 }
 footer .weather-card .weather-heading {
   color: white;
@@ -23426,29 +23280,6 @@ footer .rts-copyright-area-one .new-row p {
   .rental-section .container .row [class*=col] .tag-wrapper {
     flex-direction: column;
     align-items: flex-start;
-  }
-  section.hours-table .container .the-table-itself {
-    overflow: hidden;
-  }
-  section.hours-table .container .the-table-itself .hours-table-brow {
-    background-size: 49%;
-  }
-  section.hours-table .container .the-table-itself .hours-table-brow .table-title-wrapper {
-    flex-direction: column;
-    padding: 2rem;
-  }
-  section.hours-table .container .the-table-itself .hours-table-brow .table-title-wrapper .icon-box {
-    margin-bottom: 1rem;
-  }
-  section.hours-table .container .the-table-itself .hours-table-brow .table-title-wrapper .title {
-    padding-top: 1rem;
-    line-height: 100%;
-  }
-  section.hours-table .container .the-table-itself .some-tables {
-    padding-right: 4rem;
-  }
-  section.hours-table .container .the-table-itself .some-tables ol {
-    margin-inline-start: 10px;
   }
   section.perks {
     padding-top: 9rem;

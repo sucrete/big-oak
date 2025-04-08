@@ -13,13 +13,13 @@ export class Header extends LitElement {
             <div class="header-wrapper-1">
               <a href="index.html" class="logo-area">
                 <img
-                  src="assets/images/logo/big-oak-logo.svg"
+                  src="assets/images/logo/big-oak-logo-with-veins.svg"
                   class="big-oak-logo logo-large"
                   alt="logo"
                   onload="SVGInject(this)"
                 />
                 <img
-                  src="assets/images/logo/big-oak-logo.svg"
+                  src="assets/images/logo/big-oak-logo-with-veins.svg"
                   class="big-oak-logo logo-small"
                   alt="logo"
                 />
