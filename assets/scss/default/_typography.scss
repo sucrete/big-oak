@@ -1,62 +1,4 @@
-//* Inter
-// Regular
-@font-face {
-  font-family: "Inter";
-  src: url("../assets/fonts/Inter.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Inter Italic";
-  src: url("../assets/fonts/Inter-Italic.ttf") format("truetype");
-  font-weight: normal;
-  font-style: italic;
-}
-
-// Light
-@font-face {
-  font-family: "Inter Light";
-  src: url("../assets/fonts/Inter-Light.ttf") format("truetype");
-  font-weight: lighter;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Inter Light Italic";
-  src: url("../assets/fonts/Inter-LightItalic.ttf") format("truetype");
-  font-weight: light;
-  font-style: italic;
-}
-
-// Medium
-@font-face {
-  font-family: "Inter Medium";
-  src: url("../assets/fonts/Inter-Medium.ttf") format("truetype");
-  font-weight: medium;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Inter Medium Italic";
-  src: url("../assets/fonts/Inter-MediumItalic.ttf") format("truetype");
-  font-weight: medium;
-  font-style: italic;
-}
-
-// SemiBold
-@font-face {
-  font-family: "Inter Semibold";
-  src: url("../assets/fonts/Inter-SemiBold.ttf") format("truetype");
-  font-weight: bold;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Inter Semibold Italic";
-  src: url("../assets/fonts/Inter-SemiBoldItalic.ttf") format("truetype");
-  font-weight: bold;
-  font-style: italic;
-}
-
-
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 
 //* IKOB
@@ -73,20 +15,6 @@
   font-style: italic;
 }
 
-
-//* Alte Haas Grotesk
-@font-face {
-  font-family: "Alte Haas";
-  src: url("../assets/fonts/Alte/AlteHaasGroteskRegular.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Alte Haas Bold";
-  src: url("../assets/fonts/Alte/AlteHaasGroteskBold.ttf") format("truetype");
-  font-weight: bold;
-  font-style: normal;
-}
 
 
 
@@ -108,9 +36,9 @@ body {
   line-height: var(--line-height-b1);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: "Inter", sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: var(--color-body);
-  font-weight: var(--p-regular);
+  font-weight: 500;
   position: relative;
   overflow-x: hidden;
   margin: 0;
@@ -348,7 +276,7 @@ h6,
 p {
   font-size: var(--font-size-b2);
   line-height: var(--line-height-b2);
-  font-weight: var(--p-regular);
+  font-weight: 500;
   color: var(--color-body);
   margin: 0 0 40px;
   letter-spacing: -.25px;

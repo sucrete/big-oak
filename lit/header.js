@@ -32,7 +32,7 @@ export class Header extends LitElement {
                     </li>
 
                     <li>
-                      <a class="nav-link" href="#"> Another Page</a>
+                      <a class="nav-link" href="#">Course History</a>
                     </li>
                   </ul>
                 </nav>

@@ -495,7 +495,7 @@
       hsla(0, 0%, 0%, 0.987) 91.9%,
       hsl(0, 0%, 0%) 100%
     );
-    opacity: 0.4;
+    opacity: 0.9;
     z-index: 1;
   }
   .banner-four-wrapper {
@@ -527,6 +527,14 @@
       @media #{$sm-layout} {
         font-size: 18px;
       }
+    }
+  }
+  &.home-page {
+    .overlay {
+      opacity: .55;
+    }
+    &.rts-section-gap {
+      padding-bottom: 8rem;
     }
   }
 }

@@ -64,95 +64,6 @@
   cursor: pointer;
 }
 
-section.sponsors-section {
-  background: #f2f2f2;
-  padding-bottom: 17rem;
-  .container {
-    .row {
-      .title-center-2 {
-        .title {
-          color: var(--color-primary);
-          font-size: 52px;
-          margin-bottom: 7rem;
-        }
-      }
-      [class*="col"] {
-        .single-solution-style-one {
-          min-height: 247px;
-          padding: 0;
-          a {
-            position: relative;
-            display: block;
-            height: 100%;
-            width: 100%;
-            transform-origin: 50% 50%;
-            transition: 0.25s all ease;
-            .logo {
-              position: absolute;
-              top: 50%;
-              left: 50%;
-              width: 140px;
-              height: auto;
-              transition: 0.2s all ease;
-              transform: translate(-50%, -50%);
-              &.bottle-caps {
-                width: 120px;
-              }
-              &.burnett {
-                width: 204px;
-              }
-              &.cc {
-                width: 230px;
-              }
-              &.dia {
-                width: 210px;
-              }
-              &.dr-plumbing {
-                top: 44%;
-                width: 169px;
-              }
-              &.hi-tech {
-                width: 169px;
-              }
-              &.mcgraws {
-                width: 169px;
-              }
-              &.steel-and-pipe {
-                width: 198px;
-              }
-              &.willies {
-                width: 128px;
-              }
-            }
-          }
-          &:hover {
-            background: rgba(255, 255, 255, 0.47);
-            a {
-              transform: scale(1.1);
-            }
-          }
-        }
-      }
-    }
-  }
-  &-on-open-tournaments-page {
-    background: #fafafa;
-    padding-top: 15rem;
-    padding-bottom: 12rem;
-    .container {
-      .row {
-        [class*="col"] {
-          .single-solution-style-one {
-            &:hover {
-              background: white;
-            }
-          }
-        }
-      }
-    }
-  }
-}
-
 .my-btn {
   color: white !important;
   font-family: "Aeonik", sans-serif !important;
@@ -183,65 +94,6 @@ section.sponsors-section {
   }
 }
 
-.notices {
-  // border: 1.5px solid rgba(0, 0, 0, 0.05);
-  border-radius: 10px;
-  transform: translateY(-3rem);
-  margin-bottom: 5rem;
-  background: #ffffff;
-  position: relative;
-  z-index: 69;
-  overflow: hidden;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
-    rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
-  .row {
-    height: 100%;
-    [class*="col"] {
-      padding: 40px 45px;
-
-      &:not(:first-of-type) {
-        border-left: 1.5px solid rgba(0, 0, 0, 0.05);
-      }
-
-      .notice-icon {
-        padding-bottom: 20px;
-        img {
-          width: auto;
-          height: 25px;
-        }
-      }
-      p {
-        .explainer-icon {
-          margin-bottom: 3px;
-        }
-      }
-    }
-  }
-  // notices board on greens fees page
-  &.greens-fees {
-    @media (max-width: 992px) {
-      margin-bottom: 0rem;
-      .row {
-        [class*="col"] {
-          &:nth-of-type(3),
-          &:nth-of-type(4) {
-            border-top: 1.5px solid rgba(0, 0, 0, 0.05);
-          }
-        }
-      }
-    }
-    @media (max-width: 576px) {
-      .row {
-        [class*="col"] {
-          &:nth-of-type(2) {
-            border-top: 1.5px solid rgba(0, 0, 0, 0.05);
-          }
-        }
-      }
-    }
-  }
-}
-
 // locating the blocky shape at bottom of home page
 .banner-four-area {
   .shape {
@@ -250,232 +102,6 @@ section.sponsors-section {
     // filter: blur(2px);
   }
 }
-
-// Notices section on home page
-section.homepage-notices {
-  padding-bottom: 17rem;
-  .container {
-    .title {
-      margin-bottom: 7rem;
-    }
-    .row {
-      .single-blog-area-start {
-        border: 1px solid #d1d1d1;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        transition: all 0.15s ease;
-        a {
-          text-decoration: none;
-          display: flex;
-          flex-direction: column;
-          height: 100%;
-          .image-area {
-            width: 100%;
-            height: 350px;
-            overflow: hidden;
-            position: relative;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            img {
-              min-height: 100%;
-              min-width: 105%;
-            }
-          }
-          .inner-content-area {
-            padding: 3.5rem;
-            background: rgb(250, 250, 250);
-            flex-direction: column;
-            justify-content: space-between;
-            flex-grow: 1;
-            .top-area {
-              .title {
-                font-size: 32px;
-                margin-bottom: 1.5rem;
-                margin-left: -1px;
-              }
-              h6 {
-                font-size: 23px;
-                margin-bottom: 12px;
-                // letter-spacing: 0.2px;
-              }
-              p {
-                font-size: 17px;
-                line-height: 150%;
-                margin-bottom: 20px;
-                .highlighted {
-                  color: inherit;
-                  display: unset;
-                  font-family: inherit;
-                }
-              }
-              hr {
-                background-color: #c1c1c1;
-              }
-              .row {
-                display: flex;
-                flex-direction: row;
-                color: #262626;
-                margin-bottom: 1rem;
-                div {
-                  width: fit-content;
-                }
-                .spanner {
-                  flex: 1;
-                  position: relative;
-                  top: -7px;
-                  flex: 1;
-                  border-bottom: 1.5px dotted rgb(0 0 0 / 7%);
-                  margin-left: 10px;
-                  margin-right: 10px;
-                }
-              }
-              .specials {
-                h6 {
-                  margin-bottom: 1rem;
-                }
-                p {
-                  margin-bottom: 1rem;
-                  &.p2 {
-                    // font-family: 'Alte Haas Bold';
-                  }
-                  &:last-of-type {
-                    margin-bottom: 3rem;
-                  }
-                }
-              }
-            }
-            .link-bar {
-              margin-top: 3rem;
-              justify-content: space-between;
-              align-items: center;
-              font-family: "IKOB Italic";
-              font-size: 21px;
-
-              div {
-                flex: 1;
-              }
-              svg {
-                transition: all 0.15s ease;
-                width: 45px;
-                path {
-                  stroke: #262626;
-                }
-              }
-            }
-          }
-          &:hover {
-            .inner-content-area {
-              .top-area {
-              }
-              .link-bar {
-                svg {
-                  transform: translate(2px, -2px);
-                  path {
-                    stroke: var(--color-primary);
-                  }
-                }
-              }
-            }
-          }
-        }
-        &:hover {
-          box-shadow: rgba(118, 118, 118, 0.04) 0px 0px 0px 1px,
-            rgba(69, 69, 69, 0.04) 0px 1px 1px -0.5px,
-            rgba(64, 64, 64, 0.04) 0px 3px 3px -1.5px,
-            rgba(63, 63, 63, 0.04) 0px 6px 6px -3px,
-            rgba(117, 117, 117, 0.04) 0px 12px 12px -6px,
-            rgba(124, 124, 124, 0.04) 0px 24px 24px -12px;
-        }
-      }
-    }
-  }
-}
-
-// .hours-table {
-//   background: #fafafa;
-//   padding-top: 15rem;
-//   padding-bottom: 15rem;
-//   .container {
-//     .the-table-itself {
-//       background: white;
-//       box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
-//         rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
-//       border-radius: 10px;
-
-//       .hours-table-brow {
-//         border-bottom: 1.5px solid rgba(0, 0, 0, 0.05);
-//         padding: 1rem;
-//         background-image: url(/assets/images/svgs/antlers.svg);
-//         background-repeat: no-repeat;
-//         background-position: 96% 3%;
-//         background-size: 47%;
-//         .table-title-wrapper {
-//           padding: 3rem;
-//           padding-bottom: 2.5rem;
-//           align-items: start;
-//           margin-right: -15px;
-//           .icon-box {
-//             // padding: 10px;
-//             background: rgb(249, 249, 249);
-//             border-radius: 99px;
-//             border: 1px solid rgb(238, 238, 238);
-//             display: grid;
-//             place-items: center;
-//             width: 50px;
-//             height: 50px;
-//             margin-bottom: 2rem;
-
-//             .golf-icon {
-//               width: 25px;
-//               height: auto;
-//               // margin-right: 1rem;
-//             }
-//           }
-
-//           h3 {
-//             font-size: 30px;
-//             margin-bottom: 0px;
-//             line-height: 86%;
-//           }
-//         }
-//       }
-
-//       .some-tables {
-//         padding: 4rem;
-//         padding-top: 2.5rem;
-//         padding-right: 6rem;
-//         ol {
-//           margin-inline-start: 20px;
-//           margin-bottom: 0;
-//           li {
-//             padding-left: 20px;
-//             counter-increment: step-counter;
-//             line-height: 135%;
-//             &::marker {
-//               font-family: "Alte Haas Bold";
-//             }
-//             ul {
-//               padding-left: 16px;
-//               li {
-//                 margin: 0px;
-//                 &:first-of-type {
-//                   margin-top: 6px;
-//                 }
-//               }
-//             }
-//           }
-//         }
-//       }
-//       .addendum {
-//         border-top: 1.5px solid rgba(0, 0, 0, 0.05);
-//         padding: 2.75rem 3rem 3.7rem 3rem;
-//         line-height: 140%;
-//       }
-//     }
-//   }
-// }
 
 //* sidebar 'book tee time' button
 .sidebar-btn {
@@ -496,16 +122,32 @@ section.homepage-notices {
   display: flex;
   flex-direction: row;
   align-items: center;
-  max-width: 600px;
-  img.new-york {
-    width: 20%;
+  max-width: 700px;
+  img.geneva-new-york {
+    width: 174px;
+    position: relative;
     height: auto;
+    top: 5px;
+    // filter: drop-shadow(0 1px 1px rgba(0,0,0,0.06))
+    // drop-shadow(0 2px 2px rgba(0,0,0,0.07))
+    // drop-shadow(0 4px 4px rgba(0,0,0,0.08))
+    // drop-shadow(0 8px 8px rgba(0,0,0,0.09))
+    // drop-shadow(0 16px 16px rgba(0,0,0,0.1))
+    // drop-shadow(0 32px 32px rgba(0,0,0,0.11));
   }
   .regular-description {
-    padding-left: 4.5rem;
-    margin-left: 2rem;
-    border-left: 2px solid rgba(255, 255, 255, 0.164);
-    color: white;
+    padding-left: 3rem;
+    margin-left: 2.5rem;
+    padding-top: 0.5rem;
+    border-left: 1.5px solid rgba(255, 255, 255, 0.164);
+    padding-bottom: 0.5rem;
+    p {
+      color: white;
+      font-size: 34px;
+      font-family: "IKOB";
+      line-height: 120%;
+      margin-bottom: 0.25rem;
+    }
   }
 }
 
@@ -649,6 +291,12 @@ header {
       }
     }
   }
+}
+.oak-tree-branch {
+  width: 75px;
+  height: auto;
+  position: relative;
+  margin-bottom: 1rem;
 }
 
 header {
@@ -861,9 +509,9 @@ table {
 }
 
 .introduction-section {
-  padding-top: 18rem;
-  padding-bottom: 14rem;
-  background: #fafafa;
+  padding-top: 15rem;
+  padding-bottom: 0rem;
+  background: white;
   .introduction-column {
     display: flex;
     flex-direction: column;
@@ -873,6 +521,28 @@ table {
       font-size: 16px;
       line-height: 150%;
       margin-bottom: 20px;
+      columns: 2;
+      column-gap: 50px;
+      .bold-me {
+        font-weight: 600;
+      }
+      .emphasis {
+        display: inline-block;
+        border-left: 1.5px solid rgb(239, 239, 239);
+        padding-left: 2.5rem;
+        line-height: 115%;
+        letter-spacing: -0.4px;
+        font-size: 32px;
+        font-family: "IKOB Italic";
+        padding-bottom: 2rem;
+        margin-left: 2px;
+        .inner-emphasis {
+          font-family: "Montserrat";
+          font-size: 16px;
+          font-weight: 500;
+          color: rgb(155 155 155);
+        }
+      }
     }
     .definition-box {
       padding: 40px;
@@ -928,6 +598,46 @@ table {
       .definition {
         z-index: 8;
         position: relative;
+      }
+    }
+  }
+}
+
+// for section on Finger Lakes Times Readers Choice Award Winner
+.chicken-dinner {
+  padding-top: 2rem;
+  padding-bottom: 12rem;
+  overflow: visible;
+  position: relative;
+  z-index: 77;
+  .container {
+    .row {
+      [class*="col"] {
+        justify-content: center;
+        display: flex;
+        img {
+          width: 70%;
+          position: relative;
+          right: -10px;
+          filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.02))
+            drop-shadow(0 2px 2px rgba(0, 0, 0, 0.03))
+            drop-shadow(0 4px 4px rgba(0, 0, 0, 0.04))
+            drop-shadow(0 8px 8px rgba(0, 0, 0, 0.05))
+            drop-shadow(0 16px 16px rgba(0, 0, 0, 0.06))
+            drop-shadow(0 32px 32px rgba(0, 0, 0, 0.07));
+        }
+        ._2024 {
+          position: relative;
+          // top: -3px;
+          right: 5px;
+          transform: scale(1.4);
+          filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.06))
+            drop-shadow(0 2px 2px rgba(0, 0, 0, 0.07))
+            drop-shadow(0 4px 4px rgba(0, 0, 0, 0.08))
+            drop-shadow(0 8px 8px rgba(0, 0, 0, 0.09))
+            drop-shadow(0 16px 16px rgba(0, 0, 0, 0.1))
+            drop-shadow(0 32px 32px rgba(0, 0, 0, 0.11));
+        }
       }
     }
   }
@@ -2501,7 +2211,7 @@ footer {
               //  flex-basis: 180px;
               padding-bottom: 1rem;
               .footer-logo {
-                width: 241px;
+                width: 290px;
                 height: auto;
               }
             }
@@ -2624,7 +2334,7 @@ footer {
     position: relative;
     top: -5px;
     width: fit-content;
-    background-color: #01705a;
+    background-color: #003423;
     .weather-heading {
       color: white;
       font-family: "IKOB";
@@ -3533,35 +3243,35 @@ footer {
     }
   }
 
-  section {
-    &.homepage-notices {
-      .container {
-        .row {
-          .single-blog-area-start {
-            a {
-              .image-area {
-                height: 282px;
-              }
-              .inner-content-area {
-                padding-left: 2.5rem;
-                padding-right: 2.5rem;
-              }
-            }
-          }
-        }
-      }
-    }
-    &.homepage-notices {
-      padding-top: 10rem;
-      padding-bottom: 7rem;
-      .container {
-        .title {
-          margin-bottom: 3rem;
-        }
-      }
-      &.pro-shop-notices {
-        padding-top: 7rem;
-      }
-    }
-  }
+  // section {
+  //   &.homepage-notices {
+  //     .container {
+  //       .row {
+  //         .single-blog-area-start {
+  //           a {
+  //             .image-area {
+  //               height: 282px;
+  //             }
+  //             .inner-content-area {
+  //               padding-left: 2.5rem;
+  //               padding-right: 2.5rem;
+  //             }
+  //           }
+  //         }
+  //       }
+  //     }
+  //   }
+  //   &.homepage-notices {
+  //     padding-top: 10rem;
+  //     padding-bottom: 7rem;
+  //     .container {
+  //       .title {
+  //         margin-bottom: 3rem;
+  //       }
+  //     }
+  //     &.pro-shop-notices {
+  //       padding-top: 7rem;
+  //     }
+  //   }
+  // }
 }
