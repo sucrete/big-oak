@@ -105,7 +105,7 @@ h6,
 .h5,
 .h6 {
   word-break: break-word;
-  font-family: "Inter Medium", sans-serif;
+  font-family: var(--font-primary), sans-serif;
   line-height: 1.4074;
   color: var(--color-heading-1);
 }
@@ -116,6 +116,7 @@ h3,
 h4 {
   font-family: "IKOB";
   color: var(--color-offset);
+  color: var(--color-primary);
   letter-spacing: -1px;
 }
 
@@ -365,6 +366,10 @@ table {
   width: 100%;
 }
 
+.bold-me {
+  font-weight: 650;
+}
+
 table a,
 table a:link,
 table a:visited {
@@ -379,7 +384,7 @@ cite,
 }
 
 var {
-  font-family: "Syne", sans-serif;
+  font-family: var(--font-primary);
 }
 
 /*---------------------------

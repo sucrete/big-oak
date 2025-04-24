@@ -36,7 +36,8 @@ input[type="number"],
 input[type="tel"],
 textarea {
     font-size: var(--font-size-b2);
-    font-weight: 400;
+    font-weight: 500;
+    font-family: var(--font-primary);
     height: auto;
     line-height: 28px;
     background: transparent;
@@ -145,7 +146,7 @@ input[type="radio"] {
         font-size: 12px;
         line-height: 17px;
         color: var(--color-body);
-        font-weight: 400;
+        font-weight: 500;
         padding-left: 25px;
         cursor: pointer;
 
@@ -266,7 +267,7 @@ input[type="submit"] {
     height: 60px;
     background: var(--color-primary);
     color: var(--color-white);
-    font-weight: var(--p-medium);
+    font-weight: 500;
     font-size: var(--font-size-b2);
     line-height: var(--line-height-b3);
     height: 50px;
