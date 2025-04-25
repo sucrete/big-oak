@@ -529,13 +529,17 @@
       }
     }
   }
-  &.home-page {
+  &.home-page,
+  &.home-page-2 {
     .overlay {
-      opacity: .55;
+      opacity: 0.55;
     }
     &.rts-section-gap {
       padding-bottom: 8rem;
     }
+  }
+  &.home-page-2 {
+    background-image: url(../images/big-oak-action-shot.jpg);
   }
 }
 
@@ -658,7 +662,6 @@ $subpage-height: 550px;
       hsla(0, 0%, 0%, 0.14) 100%
     );
   }
-
   &.book-tee-time-banner {
     background-image: url(../images/big-tournament.jpg);
     .overlay {
@@ -683,8 +686,17 @@ $subpage-height: 550px;
       text-shadow: 0 0 10px rgba(0, 0, 0, 0.138);
     }
   }
-  &.contact-banner {
+  &.course-history-banner {
     background-image: url(../images/big-vista-glow.jpg);
+    .overlay {
+      background-image: $darker-background-gradient;
+    }
+    .title {
+      text-shadow: 0 0 10px rgba(0, 0, 0, 0.138);
+    }
+  }
+  &.contact-banner {
+    background-image: url(../images/big-vista-overcast.jpg);
     .overlay {
       background-image: $darker-background-gradient;
     }

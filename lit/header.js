@@ -28,11 +28,12 @@ export class Header extends LitElement {
                 <nav class="d-flex">
                   <ul>
                     <li>
-                      <a class="nav-link" href="contact.html">Contact</a>
+                      <a class="nav-link" href="course-history.html"
+                        >Course History</a
+                      >
                     </li>
-
                     <li>
-                      <a class="nav-link" href="course-history.html">Course History</a>
+                      <a class="nav-link" href="contact.html">Contact</a>
                     </li>
                   </ul>
                 </nav>
