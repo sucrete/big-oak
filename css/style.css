@@ -12127,14 +12127,14 @@ Copyright (c) 2015 Daniel Eden
 
 .slyde:nth-child(1) {
   z-index: 10;
-  transform: rotate(-3deg) translate(-50%, -50%);
+  transform: rotate(-4deg) translate(-50%, -50%);
 }
 .slyde:nth-child(1):before {
   content: "1";
 }
 .slyde:nth-child(1).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(-3deg) translate(-50%, -15rem);
+  transform: rotate(-4deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -12149,14 +12149,14 @@ Copyright (c) 2015 Daniel Eden
 
 .slyde:nth-child(2) {
   z-index: 9;
-  transform: rotate(1deg) translate(-50%, -50%);
+  transform: rotate(2deg) translate(-50%, -50%);
 }
 .slyde:nth-child(2):before {
   content: "2";
 }
 .slyde:nth-child(2).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(1deg) translate(-50%, -15rem);
+  transform: rotate(2deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -12171,14 +12171,14 @@ Copyright (c) 2015 Daniel Eden
 
 .slyde:nth-child(3) {
   z-index: 8;
-  transform: rotate(0deg) translate(-50%, -50%);
+  transform: rotate(1deg) translate(-50%, -50%);
 }
 .slyde:nth-child(3):before {
   content: "3";
 }
 .slyde:nth-child(3).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(0deg) translate(-50%, -15rem);
+  transform: rotate(1deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -12237,14 +12237,14 @@ Copyright (c) 2015 Daniel Eden
 
 .slyde:nth-child(6) {
   z-index: 5;
-  transform: rotate(0deg) translate(-50%, -50%);
+  transform: rotate(-3deg) translate(-50%, -50%);
 }
 .slyde:nth-child(6):before {
   content: "6";
 }
 .slyde:nth-child(6).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(0deg) translate(-50%, -15rem);
+  transform: rotate(-3deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -12259,14 +12259,14 @@ Copyright (c) 2015 Daniel Eden
 
 .slyde:nth-child(7) {
   z-index: 4;
-  transform: rotate(3deg) translate(-50%, -50%);
+  transform: rotate(-1deg) translate(-50%, -50%);
 }
 .slyde:nth-child(7):before {
   content: "7";
 }
 .slyde:nth-child(7).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(3deg) translate(-50%, -15rem);
+  transform: rotate(-1deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -12281,14 +12281,14 @@ Copyright (c) 2015 Daniel Eden
 
 .slyde:nth-child(8) {
   z-index: 3;
-  transform: rotate(0deg) translate(-50%, -50%);
+  transform: rotate(2deg) translate(-50%, -50%);
 }
 .slyde:nth-child(8):before {
   content: "8";
 }
 .slyde:nth-child(8).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(0deg) translate(-50%, -15rem);
+  transform: rotate(2deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -12303,14 +12303,14 @@ Copyright (c) 2015 Daniel Eden
 
 .slyde:nth-child(9) {
   z-index: 2;
-  transform: rotate(0deg) translate(-50%, -50%);
+  transform: rotate(1deg) translate(-50%, -50%);
 }
 .slyde:nth-child(9):before {
   content: "9";
 }
 .slyde:nth-child(9).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(0deg) translate(-50%, -15rem);
+  transform: rotate(1deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -12713,7 +12713,7 @@ Copyright (c) 2015 Daniel Eden
   pointer-events: none;
   background-image: linear-gradient(to bottom, hsl(0, 0%, 100%) 0%, hsla(0, 0%, 100%, 0.987) 8.1%, hsla(0, 0%, 100%, 0.951) 15.5%, hsla(0, 0%, 100%, 0.896) 22.5%, hsla(0, 0%, 100%, 0.825) 29%, hsla(0, 0%, 100%, 0.741) 35.3%, hsla(0, 0%, 100%, 0.648) 41.2%, hsla(0, 0%, 100%, 0.55) 47.1%, hsla(0, 0%, 100%, 0.45) 52.9%, hsla(0, 0%, 100%, 0.352) 58.8%, hsla(0, 0%, 100%, 0.259) 64.7%, hsla(0, 0%, 100%, 0.175) 71%, hsla(0, 0%, 100%, 0.104) 77.5%, hsla(0, 0%, 100%, 0.049) 84.5%, hsla(0, 0%, 100%, 0.013) 91.9%, hsla(0, 0%, 100%, 0) 100%);
 }
-.header-style-one.header--sticky.style-white .container .row [class*=col] .header-wrapper-1 .logo-area .logo-large path {
+.header-style-one.header--sticky.style-white .container .row [class*=col] .header-wrapper-1 .logo-area .logo-large path, .header-style-one.header--sticky.style-white .container .row [class*=col] .header-wrapper-1 .logo-area .logo-large polygon {
   fill: white;
 }
 .header-style-one.header--sticky.style-white .container .row [class*=col] .header-wrapper-1 .nav-area nav ul li a {
@@ -13919,14 +13919,18 @@ li.has-dropdown:hover .submenu li a {
   position: relative;
   z-index: 77;
 }
-.banner-four-area .overlay {
+.banner-four-area .overlay,
+.banner-four-area .overlay-2 {
   position: absolute;
-  height: 60%;
+  height: 100%;
   width: 100%;
   bottom: 0;
-  background-image: linear-gradient(to bottom, hsla(0, 0%, 0%, 0) 0%, hsla(0, 0%, 0%, 0.013) 8.1%, hsla(0, 0%, 0%, 0.049) 15.5%, hsla(0, 0%, 0%, 0.104) 22.5%, hsla(0, 0%, 0%, 0.175) 29%, hsla(0, 0%, 0%, 0.259) 35.3%, hsla(0, 0%, 0%, 0.352) 41.2%, hsla(0, 0%, 0%, 0.45) 47.1%, hsla(0, 0%, 0%, 0.55) 52.9%, hsla(0, 0%, 0%, 0.648) 58.8%, hsla(0, 0%, 0%, 0.741) 64.7%, hsla(0, 0%, 0%, 0.825) 71%, hsla(0, 0%, 0%, 0.896) 77.5%, hsla(0, 0%, 0%, 0.951) 84.5%, hsla(0, 0%, 0%, 0.987) 91.9%, hsl(0, 0%, 0%) 100%);
-  opacity: 0.9;
+  background-image: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.65) 0%, hsla(0, 0%, 0%, 0.538) 2.6%, hsla(0, 0%, 0%, 0.441) 5.1%, hsla(0, 0%, 0%, 0.357) 7.8%, hsla(0, 0%, 0%, 0.287) 10.8%, hsla(0, 0%, 0%, 0.228) 14.1%, hsla(0, 0%, 0%, 0.18) 18.1%, hsla(0, 0%, 0%, 0.141) 22.7%, hsla(0, 0%, 0%, 0.111) 28.1%, hsla(0, 0%, 0%, 0.088) 34.4%, hsla(0, 0%, 0%, 0.072) 41.9%, hsla(0, 0%, 0%, 0.061) 50.5%, hsla(0, 0%, 0%, 0.055) 60.5%, hsla(0, 0%, 0%, 0.051) 72%, hsla(0, 0%, 0%, 0.05) 85.1%, hsla(0, 0%, 0%, 0.05) 100%);
   z-index: 1;
+}
+.banner-four-area .overlay-2 {
+  z-index: 2;
+  background-image: linear-gradient(to top, hsla(0, 0%, 0%, 0.65) 0%, hsla(0, 0%, 0%, 0.538) 2.6%, hsla(0, 0%, 0%, 0.441) 5.1%, hsla(0, 0%, 0%, 0.357) 7.8%, hsla(0, 0%, 0%, 0.287) 10.8%, hsla(0, 0%, 0%, 0.228) 14.1%, hsla(0, 0%, 0%, 0.18) 18.1%, hsla(0, 0%, 0%, 0.141) 22.7%, hsla(0, 0%, 0%, 0.111) 28.1%, hsla(0, 0%, 0%, 0.088) 34.4%, hsla(0, 0%, 0%, 0.072) 41.9%, hsla(0, 0%, 0%, 0.061) 50.5%, hsla(0, 0%, 0%, 0.055) 60.5%, hsla(0, 0%, 0%, 0.051) 72%, hsla(0, 0%, 0%, 0.05) 85.1%, hsla(0, 0%, 0%, 0.05) 100%);
 }
 .banner-four-area .banner-four-wrapper .inner-left {
   max-width: 992px;
@@ -13958,14 +13962,11 @@ li.has-dropdown:hover .submenu li a {
     font-size: 18px;
   }
 }
-.banner-four-area.home-page .overlay, .banner-four-area.home-page-2 .overlay {
-  opacity: 0.55;
-}
 .banner-four-area.home-page.rts-section-gap, .banner-four-area.home-page-2.rts-section-gap {
   padding-bottom: 6rem;
 }
 .banner-four-area.home-page-2 {
-  background-image: url(../images/big-oak-low-shot.jpg);
+  background-image: url(../images/big-oak-low-shot.webp);
 }
 
 .banner-subpage {

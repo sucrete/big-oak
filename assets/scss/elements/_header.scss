@@ -153,7 +153,7 @@ header .rts-btn {
           .header-wrapper-1 {
             .logo-area {
               .logo-large {
-                path {
+                path, polygon {
                   fill: white;
                 }
               }
@@ -181,6 +181,23 @@ header .rts-btn {
       }
     }
   }
+  // &.white-logo-home {
+  //   .container {
+  //     .row {
+  //       [class*="col"] {
+  //         .header-wrapper-1 {
+  //           .logo-area {
+  //             .logo-large {
+  //               path {
+  //                 fill: white;
+  //               }
+  //             }
+  //           }
+  //         }
+  //       }
+  //     }
+  //   }
+  // }
 }
 
 // header style one after scrolling
