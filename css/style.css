@@ -12123,14 +12123,14 @@ Copyright (c) 2015 Daniel Eden
 
 .slyde:nth-child(1) {
   z-index: 10;
-  transform: rotate(-1deg) translate(-50%, -50%);
+  transform: rotate(-4deg) translate(-50%, -50%);
 }
 .slyde:nth-child(1):before {
   content: "1";
 }
 .slyde:nth-child(1).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(-1deg) translate(-50%, -15rem);
+  transform: rotate(-4deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -12145,34 +12145,12 @@ Copyright (c) 2015 Daniel Eden
 
 .slyde:nth-child(2) {
   z-index: 9;
-  transform: rotate(-2deg) translate(-50%, -50%);
+  transform: rotate(-1deg) translate(-50%, -50%);
 }
 .slyde:nth-child(2):before {
   content: "2";
 }
 .slyde:nth-child(2).leave {
-  transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(-2deg) translate(-50%, -15rem);
-  opacity: 0;
-  pointer-events: none;
-  filter: sepia(0%);
-}
-.slyde.active {
-  transform: rotate(0) translate(-50%, -50%);
-  filter: sepia(0%);
-}
-.slyde.active article {
-  opacity: 1;
-}
-
-.slyde:nth-child(3) {
-  z-index: 8;
-  transform: rotate(-1deg) translate(-50%, -50%);
-}
-.slyde:nth-child(3):before {
-  content: "3";
-}
-.slyde:nth-child(3).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
   transform: rotate(-1deg) translate(-50%, -15rem);
   opacity: 0;
@@ -12187,16 +12165,38 @@ Copyright (c) 2015 Daniel Eden
   opacity: 1;
 }
 
+.slyde:nth-child(3) {
+  z-index: 8;
+  transform: rotate(2deg) translate(-50%, -50%);
+}
+.slyde:nth-child(3):before {
+  content: "3";
+}
+.slyde:nth-child(3).leave {
+  transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
+  transform: rotate(2deg) translate(-50%, -15rem);
+  opacity: 0;
+  pointer-events: none;
+  filter: sepia(0%);
+}
+.slyde.active {
+  transform: rotate(0) translate(-50%, -50%);
+  filter: sepia(0%);
+}
+.slyde.active article {
+  opacity: 1;
+}
+
 .slyde:nth-child(4) {
   z-index: 7;
-  transform: rotate(-4deg) translate(-50%, -50%);
+  transform: rotate(0deg) translate(-50%, -50%);
 }
 .slyde:nth-child(4):before {
   content: "4";
 }
 .slyde:nth-child(4).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(-4deg) translate(-50%, -15rem);
+  transform: rotate(0deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -12233,14 +12233,14 @@ Copyright (c) 2015 Daniel Eden
 
 .slyde:nth-child(6) {
   z-index: 5;
-  transform: rotate(-2deg) translate(-50%, -50%);
+  transform: rotate(-1deg) translate(-50%, -50%);
 }
 .slyde:nth-child(6):before {
   content: "6";
 }
 .slyde:nth-child(6).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(-2deg) translate(-50%, -15rem);
+  transform: rotate(-1deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -12255,14 +12255,14 @@ Copyright (c) 2015 Daniel Eden
 
 .slyde:nth-child(7) {
   z-index: 4;
-  transform: rotate(2deg) translate(-50%, -50%);
+  transform: rotate(-3deg) translate(-50%, -50%);
 }
 .slyde:nth-child(7):before {
   content: "7";
 }
 .slyde:nth-child(7).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(2deg) translate(-50%, -15rem);
+  transform: rotate(-3deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -12277,14 +12277,14 @@ Copyright (c) 2015 Daniel Eden
 
 .slyde:nth-child(8) {
   z-index: 3;
-  transform: rotate(-4deg) translate(-50%, -50%);
+  transform: rotate(0deg) translate(-50%, -50%);
 }
 .slyde:nth-child(8):before {
   content: "8";
 }
 .slyde:nth-child(8).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(-4deg) translate(-50%, -15rem);
+  transform: rotate(0deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -12299,14 +12299,14 @@ Copyright (c) 2015 Daniel Eden
 
 .slyde:nth-child(9) {
   z-index: 2;
-  transform: rotate(3deg) translate(-50%, -50%);
+  transform: rotate(2deg) translate(-50%, -50%);
 }
 .slyde:nth-child(9):before {
   content: "9";
 }
 .slyde:nth-child(9).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(3deg) translate(-50%, -15rem);
+  transform: rotate(2deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -12321,14 +12321,14 @@ Copyright (c) 2015 Daniel Eden
 
 .slyde:nth-child(10) {
   z-index: 1;
-  transform: rotate(-2deg) translate(-50%, -50%);
+  transform: rotate(-3deg) translate(-50%, -50%);
 }
 .slyde:nth-child(10):before {
   content: "10";
 }
 .slyde:nth-child(10).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(-2deg) translate(-50%, -15rem);
+  transform: rotate(-3deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -12948,7 +12948,7 @@ Copyright (c) 2015 Daniel Eden
     display: none !important;
   }
   header.home-header .header-wrapper-1 .nav-area .button-area-right-header .menu-btn-toggle {
-    margin-top: -14px;
+    margin-top: -7px;
   }
   header.home-header .header-wrapper-1 .nav-area .button-area-right-header .menu-btn-toggle svg {
     overflow: visible;
@@ -12958,6 +12958,9 @@ Copyright (c) 2015 Daniel Eden
   }
 }
 @media screen and (max-width: 576px) {
+  header.header-style-one.header--sticky {
+    background: transparent;
+  }
   header.header-style-one.header--sticky .container {
     padding-left: 1.5rem;
     padding-right: 2rem;
@@ -12969,8 +12972,8 @@ Copyright (c) 2015 Daniel Eden
     width: 165px;
   }
   header.header-style-one.header--sticky .gradient-bg {
-    top: 59px;
-    height: 55px;
+    top: 30px;
+    height: 90px;
   }
   header.header-style-one.header--sticky.home-header.style-white:not(.sticky) .container .row [class*=col] .header-wrapper-1 {
     padding-top: 1.05rem;
@@ -12984,6 +12987,18 @@ Copyright (c) 2015 Daniel Eden
   }
   header.header-style-one.header--sticky.sticky .container .row [class*=col] .header-wrapper-1 {
     padding-top: 0.25rem;
+  }
+  header.header-style-one.header--sticky.sticky .backdrop {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 30.5px;
+    background: white;
+  }
+  header.header-style-one.header--sticky.sticky .gradient-bg {
+    height: 80px;
   }
   .header-style-one.header--sticky.sticky .container .row [class*=col] .header-wrapper-1 .logo-area .logo-small {
     width: 165px;
@@ -13876,7 +13891,7 @@ li.has-dropdown:hover .submenu li a {
 }
 @media only screen and (max-width: 767px) {
   .banner-four-bg {
-    height: 560px !important;
+    height: 470px !important;
   }
   .banner-four-bg .regular-container {
     margin-bottom: 3.25rem;
@@ -14013,24 +14028,6 @@ li.has-dropdown:hover .submenu li a {
 .banner-subpage.book-tee-time-banner .overlay {
   background-image: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.72) 0%, hsla(0, 0%, 0%, 0.585) 4.2%, hsla(0, 0%, 0%, 0.469) 7.4%, hsla(0, 0%, 0%, 0.369) 10%, hsla(0, 0%, 0%, 0.284) 12.2%, hsla(0, 0%, 0%, 0.213) 14.4%, hsla(0, 0%, 0%, 0.156) 16.8%, hsla(0, 0%, 0%, 0.109) 19.7%, hsla(0, 0%, 0%, 0.073) 23.5%, hsla(0, 0%, 0%, 0.046) 28.5%, hsla(0, 0%, 0%, 0.027) 35%, hsla(0, 0%, 0%, 0.014) 43.2%, hsla(0, 0%, 0%, 0.006) 53.5%, hsla(0, 0%, 0%, 0.002) 66.2%, hsla(0, 0%, 0%, 0) 81.6%, hsla(0, 0%, 0%, 0) 100%);
 }
-.banner-subpage.rates-banner {
-  background-image: url(../images/golf-bag-in-foreground.jpg);
-}
-.banner-subpage.rates-banner .overlay {
-  background-image: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.6) 0%, hsla(0, 0%, 0%, 0.594) 2.7%, hsla(0, 0%, 0%, 0.576) 5.2%, hsla(0, 0%, 0%, 0.548) 7.7%, hsla(0, 0%, 0%, 0.512) 10.4%, hsla(0, 0%, 0%, 0.47) 13.5%, hsla(0, 0%, 0%, 0.424) 17.1%, hsla(0, 0%, 0%, 0.375) 21.3%, hsla(0, 0%, 0%, 0.325) 26.4%, hsla(0, 0%, 0%, 0.276) 32.5%, hsla(0, 0%, 0%, 0.23) 39.9%, hsla(0, 0%, 0%, 0.188) 48.5%, hsla(0, 0%, 0%, 0.152) 58.7%, hsla(0, 0%, 0%, 0.124) 70.6%, hsla(0, 0%, 0%, 0.106) 84.3%, hsla(0, 0%, 0%, 0.1) 100%);
-}
-.banner-subpage.rates-banner .title {
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.138);
-}
-.banner-subpage.calendar-banner {
-  background-image: url(../images/caravan-of-carts.jpg);
-}
-.banner-subpage.calendar-banner .overlay {
-  background-image: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.6) 0%, hsla(0, 0%, 0%, 0.594) 2.7%, hsla(0, 0%, 0%, 0.576) 5.2%, hsla(0, 0%, 0%, 0.548) 7.7%, hsla(0, 0%, 0%, 0.512) 10.4%, hsla(0, 0%, 0%, 0.47) 13.5%, hsla(0, 0%, 0%, 0.424) 17.1%, hsla(0, 0%, 0%, 0.375) 21.3%, hsla(0, 0%, 0%, 0.325) 26.4%, hsla(0, 0%, 0%, 0.276) 32.5%, hsla(0, 0%, 0%, 0.23) 39.9%, hsla(0, 0%, 0%, 0.188) 48.5%, hsla(0, 0%, 0%, 0.152) 58.7%, hsla(0, 0%, 0%, 0.124) 70.6%, hsla(0, 0%, 0%, 0.106) 84.3%, hsla(0, 0%, 0%, 0.1) 100%);
-}
-.banner-subpage.calendar-banner .title {
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.138);
-}
 .banner-subpage.course-history-banner {
   background-image: url(../images/big-vista-glow.jpg);
 }
@@ -14069,6 +14066,7 @@ li.has-dropdown:hover .submenu li a {
   .banner-subpage-subpage {
     height: 400px;
     min-height: 400px;
+    padding-bottom: 3rem;
   }
   .banner-subpage-subpage .banner-four-wrapper .title {
     font-size: 54px;
@@ -14085,6 +14083,7 @@ li.has-dropdown:hover .submenu li a {
     font-size: 38px;
     text-align: center;
     width: 100%;
+    line-height: 100%;
   }
 }
 
@@ -14389,8 +14388,8 @@ li.has-dropdown:hover .submenu li a {
 }
 
 @media screen and (max-width: 768px) {
-  .banner-four-area:not(.league-page-body-mens) {
-    background-position: center center;
+  .banner-four-area.banner-subpage.rts-section-gap {
+    padding-bottom: 3rem;
   }
 }
 .cornered-box {
@@ -21205,9 +21204,13 @@ h5 {
 
 @media (max-width: 575.98px) {
   .timeline.timeline-one .timeline-item:nth-child(2n+1) {
-    padding-right: 0;
-    padding-left: 1.5rem;
+    padding-right: 1rem;
+    padding-left: 2rem;
     text-align: left;
+  }
+  .timeline.timeline-one .timeline-item {
+    padding-right: 1rem;
+    padding-left: 2rem;
   }
 }
 .timeline.timeline-one .timeline-item:nth-child(2n+1):after,
@@ -22149,7 +22152,7 @@ footer .container .row .logo-column div:not(.that-group) .footer-form {
   padding-bottom: 3rem;
 }
 footer .container .row .logo-column div:not(.that-group) .footer-form p {
-  color: white;
+  color: rgba(255, 255, 255, 0.6705882353);
 }
 footer .container .row .logo-column div:not(.that-group) .footer-form .that-group {
   display: flex;
@@ -22253,7 +22256,7 @@ footer .weather-card .card-body {
   padding: 0;
 }
 footer .weather-card .row {
-  font-size: 13px;
+  font-size: 11px;
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0.1em;
@@ -22341,10 +22344,10 @@ footer .weather-card .row.future-row .icon {
     display: none;
   }
   footer .weather-card .card-body {
-    padding-left: 2rem;
-    padding-right: 2rem;
-    padding-bottom: 2.5rem;
     padding-top: 1rem;
+    padding-right: 2rem;
+    padding-bottom: 1.75rem;
+    padding-left: 2rem;
   }
   footer .weather-card .card-body .today-icon {
     padding-right: 0rem;
@@ -22365,6 +22368,7 @@ footer .rts-copyright-area-one .new-row p {
   }
   footer .gradient-footer-wrapper .rts-footer-area .container .row .weather-col .weather-card .card-body .weather-heading {
     padding: 1rem;
+    padding-bottom: 2rem;
   }
 }
 @media screen and (max-width: 768px) {
@@ -22383,8 +22387,17 @@ footer .rts-copyright-area-one .new-row p {
     padding-bottom: 5rem;
   }
   footer .gradient-footer-wrapper .rts-footer-area .container > .row .weather-col .weather-card {
-    padding: 5rem 3rem;
+    padding: 2rem 1rem 1.45rem 1rem;
     width: 100%;
+  }
+  footer .gradient-footer-wrapper .rts-footer-area .container > .row .weather-col .weather-card .weather-heading {
+    font-size: 2.5rem;
+  }
+  footer .gradient-footer-wrapper .rts-footer-area .container > .row .weather-col .weather-card .weather-heading .grey-text {
+    display: block;
+  }
+  footer .gradient-footer-wrapper .rts-footer-area .container > .row .weather-col .weather-card .row.today-row .today-weather {
+    text-align: center;
   }
 }
 
@@ -22503,8 +22516,8 @@ footer .rts-copyright-area-one .new-row p {
     padding-bottom: 0;
   }
   .banner-four-area.home-page-2.rts-section-gap .regular-container .regular-box .regular-description p {
-    font-size: 27px;
-    line-height: 109%;
+    font-size: 21px;
+    line-height: 120%;
     padding-top: 10px;
   }
   section.introduction-section .introduction-column p {
@@ -22532,6 +22545,9 @@ footer .rts-copyright-area-one .new-row p {
     display: inline;
     padding: 0;
   }
+  section.chicken-dinner {
+    display: none;
+  }
   section.contact-page-body .container .rts-location-contact-area {
     padding-top: 2rem;
   }
@@ -22544,6 +22560,41 @@ footer .rts-copyright-area-one .new-row p {
   section.contact-page-body .rts-google-map-area .container .row [class*=col] .directions-addendum p {
     line-height: 149%;
     font-size: 15px;
+  }
+  footer .gradient-footer-wrapper .rts-footer-area .container .row .logo-column div:not(.that-group) .logo-brick .logo-col .footer-logo {
+    width: 225px;
+  }
+  footer .gradient-footer-wrapper .rts-footer-area .container .row .logo-column div:not(.that-group) .footer-form {
+    padding-bottom: 3rem;
+  }
+  footer .gradient-footer-wrapper .rts-footer-area .container .row .logo-column div:not(.that-group) .link-group .contact-stack {
+    border-bottom: 1px solid var(--color-accent);
+    border-right: none;
+    padding-bottom: 3rem;
+  }
+  footer .gradient-footer-wrapper .rts-footer-area .container .row .logo-column div:not(.that-group) .link-group .social-stack {
+    padding-left: 0;
+    padding-top: 3rem;
+  }
+  section.course-history {
+    padding-top: 5rem;
+    padding-bottom: 7rem;
+  }
+  section.course-history h2 .d {
+    padding-bottom: 5px;
+  }
+  section.course-history .timeline .timeline-item {
+    padding-left: 2rem;
+  }
+  section.course-history .timeline .timeline-item p {
+    text-align: justify;
+    line-height: 150%;
+  }
+  section.course-history .valediction {
+    padding: 5rem 3rem 0 3rem;
+  }
+  section.course-history .valediction p {
+    line-height: 150%;
   }
 }
 @media screen and (max-width: 576px) {

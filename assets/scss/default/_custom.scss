@@ -721,7 +721,7 @@ footer {
           .footer-form {
             padding-bottom: 3rem;
             p {
-              color: white;
+              color: #ffffffab;
             }
             .that-group {
               display: flex;
@@ -841,7 +841,7 @@ footer {
     }
     // future weather rows
     .row {
-      font-size: 13px;
+      font-size: 11px;
       font-weight: 500;
       text-transform: uppercase;
       letter-spacing: 0.1em;
@@ -946,11 +946,10 @@ footer {
         }
       }
       .card-body {
-        padding-left: 2rem;
-        padding-right: 2rem;
-        padding-bottom: 2.5rem;
         padding-top: 1rem;
-
+        padding-right: 2rem;
+        padding-bottom: 1.75rem;
+        padding-left: 2rem;
         .today-icon {
           padding-right: 0rem;
         }
@@ -983,6 +982,7 @@ footer {
                 .card-body {
                   .weather-heading {
                     padding: 1rem;
+                    padding-bottom: 2rem;
                   }
                 }
               }
@@ -1025,10 +1025,19 @@ footer {
             }
             .weather-col {
               .weather-card {
-                padding: 5rem 3rem;
+                padding: 2rem 1rem 1.45rem 1rem;
                 width: 100%;
-                .card-body {
-                  .weather-heading {
+                .weather-heading {
+                  font-size: 2.5rem;
+                  .grey-text {
+                    display: block;
+                  }
+                }
+                .row {
+                  &.today-row {
+                    .today-weather {
+                      text-align: center;
+                    }
                   }
                 }
               }
@@ -1220,8 +1229,8 @@ footer {
             display: block;
             padding-bottom: 0;
             p {
-              font-size: 27px;
-              line-height: 109%;
+              font-size: 21px;
+              line-height: 120%;
               padding-top: 10px;
             }
           }
@@ -1259,11 +1268,16 @@ footer {
             }
             .shift-me {
               display: inline;
-              padding: 0
+              padding: 0;
             }
           }
         }
       }
+    }
+  }
+  section {
+    &.chicken-dinner {
+      display: none;
     }
   }
   section {
@@ -1293,6 +1307,69 @@ footer {
               }
             }
           }
+        }
+      }
+    }
+  }
+
+  footer {
+    .gradient-footer-wrapper {
+      .rts-footer-area {
+        .container {
+          .row {
+            .logo-column {
+              div:not(.that-group) {
+                .logo-brick {
+                  .logo-col {
+                    .footer-logo {
+                      width: 225px;
+                    }
+                  }
+                }
+                .footer-form {
+                  padding-bottom: 3rem;
+                }
+
+                .link-group {
+                  .contact-stack {
+                    border-bottom: 1px solid var(--color-accent);
+                    border-right: none;
+                    padding-bottom: 3rem;
+                  }
+                  .social-stack {
+                    padding-left: 0;
+                    padding-top: 3rem;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  section {
+    &.course-history {
+      padding-top: 5rem;
+      padding-bottom: 7rem;
+      h2 {
+        .d {
+          padding-bottom: 5px;
+        }
+      }
+      .timeline {
+        .timeline-item {
+          padding-left: 2rem;
+          p {
+            text-align: justify;
+            line-height: 150%;
+          }
+        }
+      }
+      .valediction {
+        padding: 5rem 3rem 0 3rem;
+        p {
+          line-height: 150%;
         }
       }
     }

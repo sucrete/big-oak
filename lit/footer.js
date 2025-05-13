@@ -45,7 +45,7 @@ export class Footer extends LitElement {
                       </div>
                     </div>
                   </form>
-                  <div class="link-group d-flex flex-row flex-start">
+                  <div class="link-group d-flex flex-column flex-md-row flex-start">
                     <div class="contact-stack">
                       <a
                         href="tel:3157899419"
@@ -161,14 +161,14 @@ export class Footer extends LitElement {
                       <div class="col-5 day my-auto tomorrow text-center">
                         Tuesday
                       </div>
-                      <div class="col-2 icon">
+                      <div class="col-1 col-md-2 icon">
                         <img
                           src="./assets/images/icons/cloudy.svg"
                           alt=""
                           class="tomorrow-icon"
                         />
                       </div>
-                      <div class="col-5 temp my-auto text-center">
+                      <div class="col-6 temp my-auto text-center">
                         <span class="hi">72</span>°F /
                         <span class="lo">57</span>°F
                       </div>
@@ -182,14 +182,14 @@ export class Footer extends LitElement {
                       >
                         Wednesday
                       </div>
-                      <div class="col-2 icon">
+                      <div class="col-1 col-md-2 icon">
                         <img
                           src="./assets/images/icons/wind.svg"
                           alt=""
                           class="day-after-tomorrow-icon"
                         />
                       </div>
-                      <div class="col-5 temp my-auto text-center">
+                      <div class="col-6 temp my-auto text-center">
                         <span class="hi">72</span>°F /
                         <span class="lo">57</span>°F
                       </div>
@@ -203,14 +203,14 @@ export class Footer extends LitElement {
                       >
                         Thursday
                       </div>
-                      <div class="col-2 icon">
+                      <div class="col-1 col-md-2 icon">
                         <img
                           src="./assets/images/icons/snow.svg"
                           alt=""
                           class="three-days-from-today-icon"
                         />
                       </div>
-                      <div class="col-5 temp my-auto text-center">
+                      <div class="col-6 temp my-auto text-center">
                         <span class="hi">72</span>°F /
                         <span class="lo">57</span>°F
                       </div>

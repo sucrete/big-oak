@@ -25,7 +25,7 @@ export class Header extends LitElement {
                 />
               </a>
               <div class="nav-area row flex-row g-5">
-                <nav class="d-flex">
+                <nav class="d-none d-lg-flex">
                   <ul>
                     <li>
                       <a class="nav-link" href="course-history.html"

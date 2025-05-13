@@ -548,7 +548,7 @@ header .rts-btn {
         }
         .button-area-right-header {
           .menu-btn-toggle {
-            margin-top: -14px;
+            margin-top: -7px;
             svg {
               overflow: visible;
               rect {
@@ -566,6 +566,7 @@ header .rts-btn {
 @media screen and (max-width: 576px) {
   header {
     &.header-style-one.header--sticky {
+      background: transparent;
       .container {
         padding-left: 1.5rem;
         padding-right: 2rem;
@@ -584,8 +585,8 @@ header .rts-btn {
       }
 
       .gradient-bg {
-        top: 59px;
-        height: 55px;
+        top: 30px;
+        height: 90px;
       }
       &.home-header {
         &.style-white {
@@ -619,6 +620,18 @@ header .rts-btn {
             }
           }
         }
+        .backdrop {
+          position: absolute;
+          z-index: -1;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 30.5px;
+          background: white;
+        }
+        .gradient-bg {
+              height: 80px;
+            }
       }
     }
   }

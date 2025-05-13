@@ -478,7 +478,7 @@ $starker-background-gradient: linear-gradient(
     }
   }
   @media #{$sm-layout} {
-    height: 560px !important;
+    height: 470px !important;
     .regular-container {
       margin-bottom: 3.25rem;
       .regular-box {
@@ -672,24 +672,6 @@ $subpage-height: 550px;
       background-image: $to-transparent-bg-gradient;
     }
   }
-  &.rates-banner {
-    background-image: url(../images/golf-bag-in-foreground.jpg);
-    .overlay {
-      background-image: $darker-background-gradient;
-    }
-    .title {
-      text-shadow: 0 0 10px rgba(0, 0, 0, 0.138);
-    }
-  }
-  &.calendar-banner {
-    background-image: url(../images/caravan-of-carts.jpg);
-    .overlay {
-      background-image: $darker-background-gradient;
-    }
-    .title {
-      text-shadow: 0 0 10px rgba(0, 0, 0, 0.138);
-    }
-  }
   &.course-history-banner {
     background-image: url(../images/big-vista-glow.jpg);
     .overlay {
@@ -728,6 +710,7 @@ $subpage-height: 550px;
     @media (max-width: 992px) {
       height: 400px;
       min-height: 400px;
+      padding-bottom: 3rem;
       .banner-four-wrapper {
         .title {
           font-size: 54px;
@@ -745,6 +728,7 @@ $subpage-height: 550px;
         font-size: 38px;
         text-align: center;
         width: 100%;
+        line-height: 100%;
       }
     }
   }
@@ -1096,8 +1080,10 @@ $subpage-height: 550px;
 
 @media screen and (max-width: 768px) {
   .banner-four-area {
-    &:not(.league-page-body-mens) {
-      background-position: center center;
+    &.banner-subpage { 
+      &.rts-section-gap {
+        padding-bottom: 3rem;
+      }
     }
   }
 }

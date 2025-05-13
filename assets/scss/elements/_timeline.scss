@@ -1,13 +1,12 @@
 .timeline {
   width: 100%;
-  
 }
 .valediction {
   padding-top: 6rem;
   font-style: italic;
 }
 h5 {
-  color: var(--color-primary)
+  color: var(--color-primary);
 }
 .timeline.timeline-one .timeline-item {
   position: relative;
@@ -57,9 +56,13 @@ h5 {
 }
 @media (max-width: 575.98px) {
   .timeline.timeline-one .timeline-item:nth-child(2n + 1) {
-    padding-right: 0;
-    padding-left: 1.5rem;
+    padding-right: 1rem;
+    padding-left: 2rem;
     text-align: left;
+  }
+  .timeline.timeline-one .timeline-item {
+    padding-right: 1rem;
+    padding-left: 2rem;
   }
 }
 .timeline.timeline-one .timeline-item:nth-child(2n + 1):after,
