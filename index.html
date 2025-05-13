@@ -57,8 +57,9 @@
       src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v22.0"
     ></script>
     <!-- header four area start -->
-    <header class="header-style-one style-two header--sticky style-white">
+    <header class="header-style-one style-two header--sticky style-white home-header">
       <my-header> </my-header>
+      <div class="backdrop"></div>
       <div class="gradient-bg"></div>
     </header>
 
@@ -74,6 +75,13 @@
           <img
             class="geneva-new-york wow fadeInUp"
             src="assets/images/svgs/ornate-geneva-ny.svg"
+            alt=""
+            data-wow-offset="100"
+            data-wow-delay=".7s"
+          />
+          <img
+            class="geneva-new-york-filled wow fadeInUp"
+            src="assets/images/svgs/ornate-geneva-ny-filled.svg"
             alt=""
             data-wow-offset="100"
             data-wow-delay=".7s"
@@ -111,13 +119,13 @@
       class="why-choose-us-working-process introduction-section rts-section-gap mobile-padding"
     >
       <div class="container">
-        <div class="row">
+        <div class="row justify-content-between pb-3 mb-3">
           <div
-            class="col introduction-column wow fadeInUp"
+            class="introduction-column col-12 col-md-7 wow fadeInUp"
             data-wow-offset="120"
             data-wow-delay=".2s"
           >
-            <div class="why-choose-process-left pb-3 mb-3">
+            <div class="why-choose-process-left">
               <div class="text-left-title-bg-white">
                 <h2 class="title">A Finger Lakes Favorite</h2>
                 <p>
@@ -161,12 +169,39 @@
               </div>
             </div>
           </div>
+          <div
+            class="col-12 col-md-4 wow fadeInUp"
+            data-wow-offset="120"
+            data-wow-delay=".3s"
+          >
+            <div
+              class="fb-page"
+              data-href="https://www.facebook.com/profile.php?id=100063650076110#"
+              data-tabs="timeline"
+              data-width="400"
+              data-height="600"
+              data-small-header="false"
+              data-adapt-container-width="true"
+              data-hide-cover="true"
+              data-show-facepile="true"
+            >
+              <blockquote
+                cite="https://www.facebook.com/profile.php?id=100063650076110#"
+                class="fb-xfbml-parse-ignore"
+              >
+                <a
+                  href="https://www.facebook.com/profile.php?id=100063650076110#"
+                  >Big Oak Golf Course</a
+                >
+              </blockquote>
+            </div>
+          </div>
         </div>
       </div>
     </section>
     <section class="chicken-dinner">
       <div class="container">
-        <div class="row g-5 align-items-centered">
+        <div class="row g-5 align-items-centered flex-row-reverse">
           <div class="col">
             <img
               class="_2018"
@@ -237,16 +272,14 @@
       <div class="mobile-menu-main">
         <nav class="nav-main mainmenu-nav mt--30">
           <ul class="mainmenu metismenu" id="mobile-menu-active">
-           
             <li>
               <a href="course-history.html" class="main">Course History</a>
             </li>
 
-            
             <li>
               <a href="contact.html" class="main">Contact</a>
             </li>
-          
+
             <li>
               <a
                 href="book-tee-time.html"

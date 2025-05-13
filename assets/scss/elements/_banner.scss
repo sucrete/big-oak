@@ -461,7 +461,6 @@ $starker-background-gradient: linear-gradient(
 
 .banner-four-bg {
   background-image: url(../images/low-angle-action-shot.jpg);
-  // background-image: url(../images/ginger-golfer.jpg);
   height: 853px !important;
   background-repeat: no-repeat;
   background-position: center;
@@ -479,7 +478,7 @@ $starker-background-gradient: linear-gradient(
     }
   }
   @media #{$sm-layout} {
-    height: 600px !important;
+    height: 462px !important;
     .regular-container {
       margin-bottom: 3.25rem;
       .regular-box {

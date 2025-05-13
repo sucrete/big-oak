@@ -100,8 +100,8 @@ header .rts-btn {
             .header-btn {
               padding: 6px 15px;
               color: white;
-              margin-left: .25rem;
-              
+              margin-left: 0.25rem;
+
               svg {
                 path {
                   stroke: white;
@@ -153,7 +153,8 @@ header .rts-btn {
           .header-wrapper-1 {
             .logo-area {
               .logo-large {
-                path, polygon {
+                path,
+                polygon {
                   fill: white;
                 }
               }
@@ -628,16 +629,39 @@ header .rts-btn {
               padding-top: 1.5rem;
               .logo-area {
                 .logo-large {
-                  width: 185px;
+                  width: 165px;
                 }
               }
             }
           }
         }
       }
+
       .gradient-bg {
         top: 59px;
         height: 55px;
+      }
+      &.home-header {
+        &.style-white {
+          &:not(.sticky) {
+            .container {
+              .row {
+                [class*="col"] {
+                  .header-wrapper-1 {
+                    padding-top: 1.05rem;
+                  }
+                }
+              }
+            }
+            .backdrop {
+              height: 30.5px;
+            }
+            .gradient-bg {
+              top: 30px;
+              height: 90px;
+            }
+          }
+        }
       }
       &.sticky {
         .container {
@@ -652,7 +676,15 @@ header .rts-btn {
       }
     }
   }
-
+  .header-style-one.header--sticky.sticky
+    .container
+    .row
+    [class*="col"]
+    .header-wrapper-1
+    .logo-area
+    .logo-small {
+    width: 165px;
+  }
   .button-area-right-header .menu-btn-toggle {
     margin-top: -8px;
   }
