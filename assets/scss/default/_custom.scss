@@ -496,11 +496,24 @@ table {
         padding-bottom: 2rem;
         margin-left: 2px;
         color: var(--color-primary);
+        ._2024 {
+          display: none;
+          margin: 0 auto;
+          width: 100px;
+        }
         .inner-emphasis {
           font-family: "Montserrat";
           font-size: 16px;
           font-weight: 500;
           color: var(--color-secondary);
+        }
+        .br-2,
+        .br-4 {
+          display: none;
+        }
+        .shift-me {
+          display: inline-block;
+          padding-left: 5rem;
         }
       }
     }
@@ -926,8 +939,8 @@ footer {
   @media screen and (max-width: 550px) {
     .weather-card {
       ._500 {
-        line-height: 130%;
-        margin-bottom: 1rem !important;
+        line-height: 98%;
+        margin-bottom: 0rem !important;
         .hyphen {
           display: none;
         }
@@ -1095,7 +1108,7 @@ footer {
         }
       }
       &.why-choose-us-working-process {
-        padding-top: 8rem;
+        padding-top: 6rem;
         [class*="shape"] {
           display: none;
         }
@@ -1217,6 +1230,42 @@ footer {
     }
   }
 
+  section {
+    &.introduction-section {
+      .introduction-column {
+        p {
+          padding-bottom: 5rem;
+          .emphasis {
+            text-align: center;
+            padding-left: 0;
+            border: none;
+            margin: 0 auto;
+            display: block;
+            ._2024 {
+              display: block;
+              filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.06))
+                drop-shadow(0 2px 2px rgba(0, 0, 0, 0.07))
+                drop-shadow(0 4px 4px rgba(0, 0, 0, 0.08))
+                drop-shadow(0 8px 8px rgba(0, 0, 0, 0.09))
+                drop-shadow(0 16px 16px rgba(0, 0, 0, 0.1))
+                drop-shadow(0 32px 32px rgba(0, 0, 0, 0.11));
+            }
+            .br-3 {
+              display: none;
+            }
+            .br-2,
+            .br-4 {
+              display: unset;
+            }
+            .shift-me {
+              display: inline;
+              padding: 0
+            }
+          }
+        }
+      }
+    }
+  }
   section {
     &.contact-page-body {
       .container {
