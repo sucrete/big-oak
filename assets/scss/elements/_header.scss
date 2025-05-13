@@ -12,12 +12,6 @@
   @media #{$large-mobile} {
     margin-bottom: 0;
   }
-
-  .nav-area {
-    @media #{$mdsm-layout} {
-      display: none;
-    }
-  }
 }
 
 header .rts-btn {
@@ -350,80 +344,10 @@ header .rts-btn {
       width: 100%;
     }
   }
-
-  // &::after {
-  //     position: absolute;
-  //     width: 250px;
-  //     height: 250px;
-  //     left: 667.51px;
-  //     top: 82.76px;
-  //     content: '';
-  //     background: linear-gradient(270deg, #FF34DD 25.08%, #FFFFFF 43.64%, #3534FF 66.3%);
-  //     -webkit-filter: blur(200px);
-  //     -moz-filter: blur(200px);
-  //     filter: blur(200px);
-  //     transform: rotate(165deg);
-  //     z-index: -1;
-  // }
-
-  // &::before {
-  //     content: '';
-  //     z-index: -1;
-  //     position: absolute;
-  //     width: 224px;
-  //     height: 224px;
-  //     left: 108px;
-  //     top: 473px;
-  //     background: linear-gradient(270deg, #FF34DD 25.08%, #FFFFFF 43.64%, #3534FF 66.3%);
-  //     -webkit-filter: blur(200px);
-  //     -moz-filter: blur(200px);
-  //     filter: blur(200px);
-
-  // }
-
-  // .banner-inner-wrapper-five {
-  // &::after {
-  //     content: '';
-  //     z-index: -1;
-  //     position: absolute;
-  //     width: 292px;
-  //     height: 292px;
-  //     left: 1313px;
-  //     top: 485px;
-  //     background: linear-gradient(270deg, #FF34DD 25.08%, #FFFFFF 43.64%, #3534FF 66.3%);
-  //     -webkit-filter: blur(200px);
-  //     -moz-filter: blur(200px);
-  //     filter: blur(200px);
-
-  //     @media #{$laptop-device} {
-  //         display: none;
-  //     }
-
-  //     @media #{$smlg-device} {
-  //         display: none;
-  //     }
-  // }
-  // }
 }
 
 @-moz-document url-prefix() {
   .rts-banner-area-five {
-    // &::after {
-    //     filter: blur(200px);
-    //     opacity: .3;
-    // }
-
-    // &::before {
-    //     filter: blur(200px);
-    //     opacity: .3;
-    // }
-
-    // .banner-inner-wrapper-five {
-    //     &::after {
-    //         filter: blur(200px);
-    //         opacity: .3;
-    //     }
-    // }
     .round-shape-one {
       img {
         opacity: 0.15;
@@ -610,6 +534,28 @@ header .rts-btn {
         svg {
           rect {
             fill: var(--color-primary);
+          }
+        }
+      }
+    }
+  }
+
+  header.home-header {
+    .header-wrapper-1 {
+      .nav-area {
+        nav {
+          display: none !important;
+        }
+        .button-area-right-header {
+          .menu-btn-toggle {
+            margin-top: -14px;
+            svg {
+              overflow: visible;
+              rect {
+                // height: 3px;
+                fill: var(--color-primary);
+              }
+            }
           }
         }
       }

@@ -5,6 +5,9 @@
   padding-bottom: 12rem;
 }
 
+.italicized {
+  font-family: "IKOB Italic";
+}
 .my-hr {
   background-color: #d1d1d1;
   opacity: 1;
@@ -1186,7 +1189,7 @@ footer {
           padding: 0;
           padding-left: 2.5rem;
           padding-right: 2.5rem;
-          border-left: 1.5px solid rgba(255, 255, 255, 0.164);
+          border-left: 1.5px solid rgb(255 255 255 / 34%);
           img.geneva-new-york {
             display: none;
           }
@@ -1202,6 +1205,7 @@ footer {
             padding-left: 0;
             margin-left: 0;
             display: block;
+            padding-bottom: 0;
             p {
               font-size: 27px;
               line-height: 109%;

@@ -110,14 +110,10 @@
 @font-face {
   font-family: "IKOB";
   src: url("../assets/fonts/ikob.otf") format("opentype");
-  font-weight: normal;
-  font-style: normal;
 }
 @font-face {
   font-family: "IKOB Italic";
-  src: url("../assets/fonts/ikob-italic.otf") format("opentype");
-  font-weight: normal;
-  font-style: italic;
+  src: url("../assets/fonts/happy-times-NG_italic_master.otf") format("opentype");
 }
 * {
   box-sizing: border-box;
@@ -12127,14 +12123,14 @@ Copyright (c) 2015 Daniel Eden
 
 .slyde:nth-child(1) {
   z-index: 10;
-  transform: rotate(1deg) translate(-50%, -50%);
+  transform: rotate(3deg) translate(-50%, -50%);
 }
 .slyde:nth-child(1):before {
   content: "1";
 }
 .slyde:nth-child(1).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(1deg) translate(-50%, -15rem);
+  transform: rotate(3deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -12149,14 +12145,14 @@ Copyright (c) 2015 Daniel Eden
 
 .slyde:nth-child(2) {
   z-index: 9;
-  transform: rotate(-1deg) translate(-50%, -50%);
+  transform: rotate(0deg) translate(-50%, -50%);
 }
 .slyde:nth-child(2):before {
   content: "2";
 }
 .slyde:nth-child(2).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(-1deg) translate(-50%, -15rem);
+  transform: rotate(0deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -12171,14 +12167,14 @@ Copyright (c) 2015 Daniel Eden
 
 .slyde:nth-child(3) {
   z-index: 8;
-  transform: rotate(-3deg) translate(-50%, -50%);
+  transform: rotate(-2deg) translate(-50%, -50%);
 }
 .slyde:nth-child(3):before {
   content: "3";
 }
 .slyde:nth-child(3).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(-3deg) translate(-50%, -15rem);
+  transform: rotate(-2deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -12215,14 +12211,14 @@ Copyright (c) 2015 Daniel Eden
 
 .slyde:nth-child(5) {
   z-index: 6;
-  transform: rotate(1deg) translate(-50%, -50%);
+  transform: rotate(0deg) translate(-50%, -50%);
 }
 .slyde:nth-child(5):before {
   content: "5";
 }
 .slyde:nth-child(5).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(1deg) translate(-50%, -15rem);
+  transform: rotate(0deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -12237,14 +12233,14 @@ Copyright (c) 2015 Daniel Eden
 
 .slyde:nth-child(6) {
   z-index: 5;
-  transform: rotate(2deg) translate(-50%, -50%);
+  transform: rotate(1deg) translate(-50%, -50%);
 }
 .slyde:nth-child(6):before {
   content: "6";
 }
 .slyde:nth-child(6).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(2deg) translate(-50%, -15rem);
+  transform: rotate(1deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -12259,14 +12255,14 @@ Copyright (c) 2015 Daniel Eden
 
 .slyde:nth-child(7) {
   z-index: 4;
-  transform: rotate(-1deg) translate(-50%, -50%);
+  transform: rotate(3deg) translate(-50%, -50%);
 }
 .slyde:nth-child(7):before {
   content: "7";
 }
 .slyde:nth-child(7).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(-1deg) translate(-50%, -15rem);
+  transform: rotate(3deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -12281,14 +12277,14 @@ Copyright (c) 2015 Daniel Eden
 
 .slyde:nth-child(8) {
   z-index: 3;
-  transform: rotate(-1deg) translate(-50%, -50%);
+  transform: rotate(0deg) translate(-50%, -50%);
 }
 .slyde:nth-child(8):before {
   content: "8";
 }
 .slyde:nth-child(8).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(-1deg) translate(-50%, -15rem);
+  transform: rotate(0deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -12325,14 +12321,14 @@ Copyright (c) 2015 Daniel Eden
 
 .slyde:nth-child(10) {
   z-index: 1;
-  transform: rotate(-1deg) translate(-50%, -50%);
+  transform: rotate(2deg) translate(-50%, -50%);
 }
 .slyde:nth-child(10):before {
   content: "10";
 }
 .slyde:nth-child(10).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(-1deg) translate(-50%, -15rem);
+  transform: rotate(2deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -12622,11 +12618,6 @@ Copyright (c) 2015 Daniel Eden
 @media only screen and (max-width: 575px) {
   .header-wrapper-1 {
     margin-bottom: 0;
-  }
-}
-@media only screen and (max-width: 991px) {
-  .header-wrapper-1 .nav-area {
-    display: none;
   }
 }
 
@@ -12951,6 +12942,18 @@ Copyright (c) 2015 Daniel Eden
     fill: var(--color-primary);
   }
   header:not(.style-white) .menu-btn-toggle svg rect {
+    fill: var(--color-primary);
+  }
+  header.home-header .header-wrapper-1 .nav-area nav {
+    display: none !important;
+  }
+  header.home-header .header-wrapper-1 .nav-area .button-area-right-header .menu-btn-toggle {
+    margin-top: -14px;
+  }
+  header.home-header .header-wrapper-1 .nav-area .button-area-right-header .menu-btn-toggle svg {
+    overflow: visible;
+  }
+  header.home-header .header-wrapper-1 .nav-area .button-area-right-header .menu-btn-toggle svg rect {
     fill: var(--color-primary);
   }
 }
@@ -13873,7 +13876,7 @@ li.has-dropdown:hover .submenu li a {
 }
 @media only screen and (max-width: 767px) {
   .banner-four-bg {
-    height: 462px !important;
+    height: 560px !important;
   }
   .banner-four-bg .regular-container {
     margin-bottom: 3.25rem;
@@ -21600,6 +21603,10 @@ h5 {
   padding-bottom: 12rem;
 }
 
+.italicized {
+  font-family: "IKOB Italic";
+}
+
 .my-hr {
   background-color: #d1d1d1;
   opacity: 1;
@@ -22463,7 +22470,7 @@ footer .rts-copyright-area-one .new-row p {
     padding: 0;
     padding-left: 2.5rem;
     padding-right: 2.5rem;
-    border-left: 1.5px solid rgba(255, 255, 255, 0.164);
+    border-left: 1.5px solid rgba(255, 255, 255, 0.34);
   }
   .banner-four-area.home-page-2.rts-section-gap .regular-container .regular-box img.geneva-new-york {
     display: none;
@@ -22480,6 +22487,7 @@ footer .rts-copyright-area-one .new-row p {
     padding-left: 0;
     margin-left: 0;
     display: block;
+    padding-bottom: 0;
   }
   .banner-four-area.home-page-2.rts-section-gap .regular-container .regular-box .regular-description p {
     font-size: 27px;
