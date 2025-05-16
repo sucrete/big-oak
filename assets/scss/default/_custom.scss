@@ -1,8 +1,40 @@
-@import url("https://fonts.googleapis.com/css2?family=Sono:wght@200..800&display=swap");
+
 
 .page-body {
   padding-top: 17rem;
   padding-bottom: 12rem;
+}
+
+.text-center-title-bg-white {
+  text-align: center;
+
+  .title {
+    font-size: 48px;
+
+    @media #{$large-mobile} {
+      font-size: 37px !important;
+      margin-bottom: 1rem;
+    }
+  }
+
+  p {
+    max-width: 60%;
+    margin: auto;
+    font-size: 20px;
+
+    @media #{$sm-layout} {
+      max-width: 100%;
+    }
+
+    @media #{$large-mobile} {
+      max-width: 100%;
+      font-size: 16px;
+    }
+  }
+}
+
+.h-100-vh {
+  height: 100vh;
 }
 
 .italicized {

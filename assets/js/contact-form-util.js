@@ -3,6 +3,9 @@
 })();
 
 const btn = document.getElementsByClassName("button-text")[0];
+const inputs = document.getElementsByClassName("inputs-wrapper")[0];
+const msgBox = document.getElementsByClassName("message-sent-box")[0];
+
 const firstName = document.getElementById("name");
 const lastName = document.getElementById("last");
 const email = document.getElementById("email");
@@ -17,7 +20,7 @@ document
     btn.textContent = "Sending...";
 
     const serviceID = "default_service";
-    const templateID = 'template_4pmlvtj';
+    const templateID = "template_4pmlvtj";
 
     emailjs.sendForm(serviceID, templateID, this).then(
       () => {
@@ -27,7 +30,8 @@ document
         email.value = "";
         phone.value = "";
         message.value = "";
-        alert("Message Sent");
+        inputs.classList.toggle("subdued");
+        msgBox.classList.toggle("show");
       },
       (err) => {
         btn.textContent = "Send Message";
