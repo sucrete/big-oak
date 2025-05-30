@@ -27,24 +27,6 @@ export class Footer extends LitElement {
                     <div class="col"></div>
                   </div>
 
-                  <form action="" class="footer-form">
-                    <div class="single">
-                      <p class="mb-4">Get the latest news & promotions!</p>
-                      <!-- <label for="name">Email</label> -->
-                      <div class="that-group">
-                        <input
-                          type="text"
-                          id="email"
-                          name="email"
-                          placeholder="Email"
-                          required=""
-                        />
-                        <button class="rts-btn btn-primary footer-submit">
-                          Submit
-                        </button>
-                      </div>
-                    </div>
-                  </form>
                   <div class="link-group d-flex flex-column flex-md-row flex-start">
                     <div class="contact-stack">
                       <a
@@ -53,7 +35,7 @@ export class Footer extends LitElement {
                       >
                         <img
                           class="icon phone-icon"
-                          src="./assets/images/icons/phone.svg"
+                          src="./assets/images/icons/phone.svg" 
                           alt=""
                         />(315) 789-9419
                       </a>
