@@ -1,0 +1,6 @@
+{
+  "$schema": "www.bigoakgc.com/vercel.json",
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "redirects": []
+}
