@@ -3,6 +3,13 @@
   padding-bottom: 12rem;
 }
 
+.booking-engine-section {
+  padding-top: 10rem;
+  @media (max-width: 576px) {
+    padding-top: 5rem;
+  }
+}
+
 .text-center-title-bg-white {
   text-align: center;
 
